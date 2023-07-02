@@ -2,6 +2,9 @@
 
 A ready to use Nuxt 3 boilerplate
 
+![screenshot](https://raw.githubusercontent.com/renegadevi/nuxt-boilerplate/main/.github/screenshot.png)
+![lighthouse](https://raw.githubusercontent.com/renegadevi/nuxt-boilerplate/main/.github/lighthouse.png)
+
 ## Setup
 
 ### Prerequisites:

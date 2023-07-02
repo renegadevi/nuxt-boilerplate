@@ -18,8 +18,6 @@ coverage
 /cypress/screenshots/
 
 # Editor directories and files
-.vscode/*
-!.vscode/extensions.json
 .idea
 *.suo
 *.ntvs*
@@ -43,8 +41,8 @@ logs
 .DS_Store
 
 # Local env files
-.env.*
-!.env.example
 node_modules
+
+# Local certs
 certs/localhost-key.pem
 certs/localhost.pem
