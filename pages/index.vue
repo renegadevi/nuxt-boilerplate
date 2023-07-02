@@ -10,7 +10,7 @@ useSeoMeta({
 });
 </script>
 <template>
-  <div class="mb-10 pb-5">
+  <div class="mb-10 flex justify-center pb-5">
     <section>
       <div
         class="relative overflow-hidden border-b border-gray-200 pb-5 text-center dark:border-gray-600"

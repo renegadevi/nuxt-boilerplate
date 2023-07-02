@@ -13,7 +13,7 @@ useLocaleHead({
 });
 </script>
 <template>
-  <div class="container mx-auto max-w-screen-lg">
+  <div class="container mx-auto max-w-screen-lg p-4 lg:p-0">
     <header>
       <nav class="flex justify-between py-7">
         <NuxtLink to="/" aria-label="Home">

@@ -83,7 +83,8 @@
   @apply fixed bottom-0 left-0 right-0 z-50 mx-auto border px-6 py-4 shadow-xl sm:bottom-6 sm:left-16 sm:right-16 sm:max-w-5xl sm:rounded-md;
 }
 .cookieControl__BarContainer {
-  @apply flex items-center justify-between space-x-6;
+  @apply flex items-center justify-between space-x-6 sm:space-x-0;
+  @apply flex-col lg:flex-row;
 }
 .cookieControl__BarContainer div h3 {
   @apply mb-1 font-semibold;
@@ -92,8 +93,9 @@
   @apply text-sm;
 }
 .cookieControl__BarButtons {
-  @apply ml-auto flex flex-col space-y-3 sm:flex-row sm:space-x-3 sm:space-y-0;
-  @apply flex-row-reverse;
+  @apply ml-auto flex flex-col space-y-3 sm:space-x-3 sm:space-y-0;
+  @apply mt-4 lg:mt-0;
+  @apply md:flex-row-reverse;
 }
 .cookieControl__BarButtons button {
   @apply whitespace-nowrap rounded-lg border  px-5 py-2.5 text-sm font-medium  transition duration-150 ease-in-out focus:z-10 focus:outline-none focus:ring-4;
