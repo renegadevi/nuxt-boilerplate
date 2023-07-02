@@ -46,3 +46,5 @@ node_modules
 # Local certs
 certs/localhost-key.pem
 certs/localhost.pem
+
+pnpm-lock.yaml
