@@ -2,6 +2,8 @@
 
 A ready to use Nuxt 3 boilerplate
 
+**Demo**: https://nuxt-boilerplate-production.up.railway.app/
+
 ![screenshot](https://github.com/renegadevi/nuxt-boilerplate/blob/e806bae6efec29a19579d7cf76ef683ffe980917/.github/screenshot.png)
 ![lighthouse](https://github.com/renegadevi/nuxt-boilerplate/blob/e806bae6efec29a19579d7cf76ef683ffe980917/.github/lighthouse.png)
 
