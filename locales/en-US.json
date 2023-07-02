@@ -1,0 +1,53 @@
+{
+  "themes": {
+    "system": "System",
+    "light": "Light",
+    "dark": "Dark"
+  },
+  "cookies": {
+    "bar": {
+      "title": "🍪 Hi. This site uses cookies",
+      "description": "We use cookies and similar technologies to help personalize content and offer a better experience. You can opt to customize them by clicking the customize button."
+    },
+    "modal": {
+      "title": "Customize",
+      "description": "We use different types of cookies to optimize your experience on our website. Click on the categories below to learn more about their purposes. You can choose the types of cookies to be allowed and can change your preferences later. Remember that disabling cookies can affect your experience.",
+      "privacy-policy": "Privacy policy"
+    },
+    "necessary": {
+      "title": "Strictly necessary cookies",
+      "description": "These cookies are essential for the proper functioning of my website. Without these cookies, the website would not work properly"
+    }
+  },
+  "error": {
+    "return": "Go back",
+    "page-not-found": "Page not found"
+  },
+  "pages": {
+    "index": {
+      "meta": {
+        "title": "Home",
+        "description": "Home page"
+      },
+      "link": "Home",
+      "hero": {
+        "title": "Nuxt Boilerplate",
+        "subtitle": "Unofficial",
+        "description": "A ready to use starter kit for all kinds of projects"
+      },
+      "features": {
+        "title": "Features",
+        "description": "Here is a list of plugin and features added to to create this boilerplate"
+      }
+    },
+    "about": {
+      "meta": {
+        "title": "About",
+        "description": "About page"
+      },
+      "link": "About",
+      "title": "About",
+      "p": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque iste atque, hic porro officiis fugit quae deserunt nobis dolorum odit dignissimos consequatur esse maiores repellat impedit. Quae dolorum id rem?"
+    }
+  }
+}

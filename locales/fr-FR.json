@@ -1,0 +1,53 @@
+{
+  "themes": {
+    "system": "Système",
+    "light": "Lumière",
+    "dark": "Sombre"
+  },
+  "cookies": {
+    "bar": {
+      "title": "🍪 Salut. Ce site utilise des cookies",
+      "description": "Nous utilisons des cookies et des technologies similaires pour personnaliser le contenu et offrir une meilleure expérience. Vous pouvez choisir de les personnaliser en cliquant sur le bouton personnaliser."
+    },
+    "modal": {
+      "title": "Personnaliser",
+      "description": "Nous utilisons différents types de cookies pour optimiser votre expérience sur notre site Web. Cliquez sur les catégories ci-dessous pour en savoir plus sur leurs objectifs. Vous pouvez choisir les types de cookies à autoriser et modifier ultérieurement vos préférences. N'oubliez pas que la désactivation des cookies peut affecter votre expérience.",
+      "privacy-policy": "Politique de confidentialité"
+    },
+    "necessary": {
+      "title": "Cookies strictement nécessaires",
+      "description": "Ces cookies sont indispensables au bon fonctionnement de mon site internet. Sans ces cookies, le site Web ne fonctionnerait pas correctement"
+    }
+  },
+  "error": {
+    "return": "Retourner",
+    "page-not-found": "Page non trouvée"
+  },
+  "pages": {
+    "index": {
+      "meta": {
+        "title": "Accueil",
+        "description": "Accueil"
+      },
+      "link": "Accueil",
+      "hero": {
+        "title": "Nuxt Boilerplate",
+        "subtitle": "Non officiel",
+        "description": "Un kit de démarrage prêt à l'emploi pour toutes sortes de projets"
+      },
+      "features": {
+        "title": "Fonctionnalité",
+        "description": "Voici une liste de plugins et de fonctionnalités ajoutées pour créer ce passe-partout"
+      }
+    },
+    "about": {
+      "meta": {
+        "title": "Á propos",
+        "description": "Á propos"
+      },
+      "link": "Á propos",
+      "title": "Á propos",
+      "p": "Si le client est très intelligent, il pourra obtenir le résultat souhaité. Et celui-ci, ici et là, fuit les devoirs qui nous font souffrir, hait les réalisations les plus dignes, repousse et gêne les plus grandes. Quel genre de douleur est cette chose?"
+    }
+  }
+}
