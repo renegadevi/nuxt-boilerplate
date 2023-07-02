@@ -93,15 +93,15 @@
   @apply text-sm;
 }
 .cookieControl__BarButtons {
-  @apply ml-auto flex flex-col space-y-3 sm:space-x-3 sm:space-y-0;
+  @apply ml-auto flex flex-col space-y-3 md:space-x-3 md:space-y-0;
   @apply mt-4 lg:mt-0;
   @apply md:flex-row-reverse;
 }
 .cookieControl__BarButtons button {
-  @apply whitespace-nowrap rounded-lg border  px-5 py-2.5 text-sm font-medium  transition duration-150 ease-in-out focus:z-10 focus:outline-none focus:ring-4;
+  @apply whitespace-nowrap rounded-lg border px-5 py-2.5 text-sm font-medium  transition duration-150 ease-in-out focus:z-10 focus:outline-none focus:ring-4;
 }
 .cookieControl__BarButtons button:nth-child(1) {
-  @apply ml-3 whitespace-nowrap rounded-lg  px-5 py-2.5 text-sm font-medium  transition duration-150 ease-in-out  focus:z-10 focus:outline-none focus:ring-4;
+  @apply md:ml-3 whitespace-nowrap rounded-lg  px-5 py-2.5 text-sm font-medium  transition duration-150 ease-in-out  focus:z-10 focus:outline-none focus:ring-4;
 }
 
 /* --------------------------------------------------------------------------
