@@ -15,7 +15,7 @@ useLocaleHead({
 <template>
   <div class="container mx-auto max-w-screen-lg p-4 lg:p-0">
     <header>
-      <nav class="flex justify-between py-7">
+      <nav class="mb-5 flex justify-between py-7">
         <NuxtLink to="/" aria-label="Home">
           <nuxt-img
             class="h-6 dark:hidden sm:ml-3 lg:ml-0"
@@ -47,29 +47,47 @@ useLocaleHead({
       </nav>
       <nav class="container">
         <ul
-          class="prose dark:prose-invert flex font-light text-slate-500 dark:text-slate-100"
+          class="prose dark:prose-invert flex justify-between font-light text-slate-500 dark:text-slate-100"
         >
-          <li class="mx-1">
-            <NuxtLink
-              class="mx-1 inline-block rounded-lg border border-gray-300 bg-gray-50 px-4 py-1.5 text-gray-700 hover:cursor-pointer hover:bg-slate-500 hover:text-white dark:border-gray-600 dark:bg-slate-700 dark:text-white dark:hover:bg-slate-600"
-              to="/"
-              >{{ $t("pages.index.link") }}</NuxtLink
-            >
-          </li>
-          <li>
-            <NuxtLink
-              class="mx-1 inline-block rounded-lg border border-gray-300 bg-gray-50 px-4 py-1.5 text-gray-700 hover:cursor-pointer hover:bg-slate-500 hover:text-white dark:border-gray-600 dark:bg-slate-700 dark:text-white dark:hover:bg-slate-600"
-              to="/about"
-              >{{ $t("pages.about.link") }}</NuxtLink
-            >
-          </li>
-          <li>
-            <NuxtLink
-              class="mx-1 inline-block rounded-lg border border-gray-300 bg-gray-50 px-4 py-1.5 text-gray-700 hover:cursor-pointer hover:bg-slate-500 hover:text-white dark:border-gray-600 dark:bg-slate-700 dark:text-white dark:hover:bg-slate-600"
-              to="/404"
-              >404</NuxtLink
-            >
-          </li>
+          <div class="flex">
+            <li class="mx-1">
+              <NuxtLink
+                class="mx-1 inline-block rounded-lg border border-gray-300 bg-gray-50 px-4 py-1.5 text-gray-700 hover:cursor-pointer hover:bg-slate-500 hover:text-white dark:border-gray-600 dark:bg-slate-700 dark:text-white dark:hover:bg-slate-600"
+                to="/"
+                >{{ $t("pages.index.link") }}</NuxtLink
+              >
+            </li>
+            <li>
+              <NuxtLink
+                class="mx-1 inline-block rounded-lg border border-gray-300 bg-gray-50 px-4 py-1.5 text-gray-700 hover:cursor-pointer hover:bg-slate-500 hover:text-white dark:border-gray-600 dark:bg-slate-700 dark:text-white dark:hover:bg-slate-600"
+                to="/about"
+                >{{ $t("pages.about.link") }}</NuxtLink
+              >
+            </li>
+            <li>
+              <NuxtLink
+                class="mx-1 inline-block rounded-lg border border-gray-300 bg-gray-50 px-4 py-1.5 text-gray-700 hover:cursor-pointer hover:bg-slate-500 hover:text-white dark:border-gray-600 dark:bg-slate-700 dark:text-white dark:hover:bg-slate-600"
+                to="/404"
+                >404</NuxtLink
+              >
+            </li>
+          </div>
+          <div>
+            <li class="space-between">
+              <NuxtLink
+                class="flex rounded-lg border border-gray-300 bg-gray-50 px-4 py-1.5 text-gray-700 hover:cursor-pointer hover:bg-slate-500 hover:text-white dark:border-gray-600 dark:bg-slate-700 dark:text-white dark:hover:bg-slate-600"
+                target="_blank"
+                to="https://github.com/renegadevi/nuxt-boilerplate"
+                ><Icon
+                  name="mdi:github"
+                  size="auto"
+                  color="white"
+                  class="mr-2"
+                />
+                Github repo</NuxtLink
+              >
+            </li>
+          </div>
         </ul>
       </nav>
     </header>
