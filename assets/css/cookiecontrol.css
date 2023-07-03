@@ -108,14 +108,14 @@
    Modal
    -------------------------------------------------------------------------- */
 .cookieControl__Modal {
-  @apply fixed inset-0 z-[1000] flex items-center overflow-y-auto px-4 py-6 shadow-xl ring-1  drop-shadow-sm backdrop-blur-[.125em] sm:px-0;
+  @apply fixed inset-0 z-[1000] flex items-center overflow-y-auto px-4 py-6 shadow-xl ring-1  drop-shadow-sm backdrop-blur-[.125em] md:px-0;
   background: rgba(0, 0, 0, 0.25);
 }
 .cookieControl__ModalUnsaved {
   @apply fixed bottom-0 left-0 right-0 z-50 mx-auto mb-5 border  p-3 text-center text-sm sm:bottom-6 sm:left-16 sm:right-16 sm:max-w-sm sm:rounded-md;
 }
 .cookieControl__ModalContent {
-  @apply relative mb-6 transform rounded-lg border shadow-xl transition-all sm:mx-auto sm:w-full sm:max-w-3xl;
+  @apply relative mb-6 transform rounded-lg border shadow-xl transition-all sm:mx-auto sm:w-full md:max-w-3xl;
 }
 .cookieControl__ModalContentInner {
   @apply px-7 py-3;
@@ -153,7 +153,7 @@
   @apply border-b font-bold;
 }
 .cookieControl__ModalContentInner {
-  @apply max-h-[80vh] overflow-y-scroll;
+  @apply max-h-[90vh] md:max-h-[80vh] overflow-y-scroll;
 }
 .cookieControl__ModalContentInner ul li {
   @apply relative my-3 rounded-md p-5;
@@ -174,16 +174,16 @@
   @apply float-right;
 }
 .cookieControl__ModalButtons {
-  @apply fixed mb-2 mt-5 flex flex-row-reverse;
+  @apply fixed mb-2 mt-5 flex flex-col sm:flex-row-reverse;
 }
 .cookieControl__ModalButtons button {
-  @apply flex-row whitespace-nowrap rounded-lg border px-5 py-2.5 text-sm font-medium transition duration-150 ease-in-out focus:z-10 focus:outline-none focus:ring-4;
+  @apply flex-row whitespace-nowrap rounded-lg border px-5 py-2.5 text-sm font-medium transition duration-150 ease-in-out focus:z-10 focus:outline-none focus:ring-4 mb-3 md:mb-0;
 }
 .cookieControl__ModalButtons button:nth-child(3) {
-  @apply absolute left-0;
+  @apply sm:absolute sm:left-0;
 }
 .cookieControl__ModalButtons button:nth-child(1) {
-  @apply ml-2 whitespace-nowrap rounded-lg px-5 py-2.5 text-sm font-medium transition duration-150 ease-in-out focus:z-10 focus:outline-none focus:ring-4;
+  @apply sm:ml-2 whitespace-nowrap rounded-lg px-5 py-2.5 text-sm font-medium transition duration-150 ease-in-out focus:z-10 focus:outline-none focus:ring-4;
 }
 
 /* -----------------------------------------------------------------------------
