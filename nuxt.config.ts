@@ -38,10 +38,6 @@ export default defineNuxtConfig({
   pinia: {
     autoImports: ["defineStore", "acceptHMRUpdate"],
   },
-  //This can fix the issue when pushing to production on some PaaS. But in local environment it can instead have opposite effect.
-  alias: {
-    pinia: "/node_modules/@pinia/nuxt/node_modules/pinia/dist/pinia.mjs",
-  },
   app: {
     head: {
       charset: "utf-8",
