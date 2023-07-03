@@ -22,16 +22,6 @@ A ready to use Nuxt 3 boilerplate
 pnpm install
 ```
 
-### Important; Remove alias
-
-In the `nuxt.config.ts` there's currently a alias for fixing pinia location on **Railway** where this is hosted. Comment out this part to proceed locally:
-
-```js
-alias: {
-    pinia: "/node_modules/@pinia/nuxt/node_modules/pinia/dist/pinia.mjs",
-},
-```
-
 ### Optional: `.env`
 
 ```ini
