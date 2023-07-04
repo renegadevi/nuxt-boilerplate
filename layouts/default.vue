@@ -78,12 +78,22 @@ useLocaleHead({
                 class="flex rounded-lg border border-gray-300 bg-gray-50 px-4 py-1.5 text-gray-700 hover:cursor-pointer hover:bg-slate-500 hover:text-white dark:border-gray-600 dark:bg-slate-700 dark:text-white dark:hover:bg-slate-600"
                 target="_blank"
                 to="https://github.com/renegadevi/nuxt-boilerplate"
-                ><Icon
-                  name="mdi:github"
-                  size="auto"
-                  color="white"
-                  class="mr-2"
-                />
+                ><span class="dark:hidden"
+                  ><Icon
+                    name="mdi:github"
+                    size="auto"
+                    color="black"
+                    class="mr-2"
+                  />
+                </span>
+                <span class="hidden dark:block">
+                  <Icon
+                    name="mdi:github"
+                    size="auto"
+                    color="white"
+                    class="mr-2 hidden dark:block"
+                  />
+                </span>
                 Github repo</NuxtLink
               >
             </li>
