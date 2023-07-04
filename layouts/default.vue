@@ -46,10 +46,10 @@ useLocaleHead({
         </div>
       </nav>
       <nav class="container">
-        <ul
+        <div
           class="prose dark:prose-invert flex justify-between font-light text-slate-500 dark:text-slate-100"
         >
-          <div class="flex">
+          <ul class="flex">
             <li class="mx-1">
               <NuxtLink
                 class="mx-1 inline-block rounded-lg border border-gray-300 bg-gray-50 px-4 py-1.5 text-gray-700 hover:cursor-pointer hover:bg-slate-500 hover:text-white dark:border-gray-600 dark:bg-slate-700 dark:text-white dark:hover:bg-slate-600"
@@ -71,8 +71,8 @@ useLocaleHead({
                 >404</NuxtLink
               >
             </li>
-          </div>
-          <div>
+          </ul>
+          <ul>
             <li class="space-between">
               <NuxtLink
                 class="flex rounded-lg border border-gray-300 bg-gray-50 px-4 py-1.5 text-gray-700 hover:cursor-pointer hover:bg-slate-500 hover:text-white dark:border-gray-600 dark:bg-slate-700 dark:text-white dark:hover:bg-slate-600"
@@ -97,8 +97,8 @@ useLocaleHead({
                 Github repo</NuxtLink
               >
             </li>
-          </div>
-        </ul>
+          </ul>
+        </div>
       </nav>
     </header>
     <div
