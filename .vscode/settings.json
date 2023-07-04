@@ -22,5 +22,8 @@
     "vue": "vue",
     "css": "css"
   },
-  "tailwindCSS.emmetCompletions": true
+  "tailwindCSS.emmetCompletions": true,
+  "i18n-ally.localesPaths": [
+    "locales"
+  ]
 }
