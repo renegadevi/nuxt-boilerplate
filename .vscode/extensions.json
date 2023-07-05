@@ -1,0 +1,17 @@
+{
+  "recommendations": [
+    "antfu.goto-alias",
+    "bourhaouta.tailwindshades",
+    "bradlc.vscode-tailwindcss",
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "lokalise.i18n-ally",
+    "MisterJ.vue-volar-extention-pack",
+    "Nuxtr.nuxtr-vscode",
+    "rvest.vs-code-prettier-eslint",
+    "sdras.vue-vscode-snippets",
+    "Vue.volar",
+    "Vue.vscode-typescript-vue-plugin",
+    "yoavbls.pretty-ts-errors"
+  ]
+}
