@@ -15,8 +15,8 @@ useLocaleHead({
 <template>
   <div class="container mx-auto max-w-screen-lg p-4 lg:p-0">
     <header>
-      <nav class="mb-5 flex justify-between py-7">
-        <NuxtLink to="/" aria-label="Home">
+      <nav class="mb-5 flex flex-row justify-between py-7">
+        <NuxtLink to="/" aria-label="Home" class="min-w-fit">
           <nuxt-img
             class="h-6 dark:hidden sm:ml-3 lg:ml-0"
             src="nuxt/full-logo-green-dark.svg"
@@ -32,27 +32,27 @@ useLocaleHead({
             style="height: 24px; width: 99px"
           />
         </NuxtLink>
-        <div class="flex-grow-1">
+        <div class="flex flex-col sm:flex-row">
           <div
-            class="mx-2 inline-block rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-slate-800 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500"
+            class="mx-2 rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-slate-800 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500 inline-flex mb-3 sm:mb-0"
           >
             <ThemeSwitcher />
           </div>
           <div
-            class="mx-2 inline-block rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-slate-800 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500"
+            class="mx-2 inline-flex rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-slate-800 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500"
           >
             <LanguageSelector />
           </div>
         </div>
       </nav>
-      <nav class="container">
+      <nav>
         <div
           class="prose dark:prose-invert flex justify-between font-light text-slate-500 dark:text-slate-100"
         >
           <ul class="flex">
-            <li class="mx-1">
+            <li class="mr-1">
               <NuxtLink
-                class="mx-1 inline-block rounded-lg border border-gray-300 bg-gray-50 px-4 py-1.5 text-gray-700 hover:cursor-pointer hover:bg-slate-500 hover:text-white dark:border-gray-600 dark:bg-slate-700 dark:text-white dark:hover:bg-slate-600"
+                class="mr-1 inline-block rounded-lg border border-gray-300 bg-gray-50 px-4 py-1.5 text-gray-700 hover:cursor-pointer hover:bg-slate-500 hover:text-white dark:border-gray-600 dark:bg-slate-700 dark:text-white dark:hover:bg-slate-600"
                 to="/"
                 >{{ $t("pages.index.link") }}</NuxtLink
               >
@@ -83,7 +83,7 @@ useLocaleHead({
                     name="mdi:github"
                     size="auto"
                     color="black"
-                    class="mr-2"
+
                   />
                 </span>
                 <span class="hidden dark:block">
@@ -91,10 +91,10 @@ useLocaleHead({
                     name="mdi:github"
                     size="auto"
                     color="white"
-                    class="mr-2 hidden dark:block"
+                    class="hidden dark:block"
                   />
                 </span>
-                Github repo</NuxtLink
+                </NuxtLink
               >
             </li>
           </ul>
