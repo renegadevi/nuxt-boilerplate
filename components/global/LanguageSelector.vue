@@ -1,3 +1,6 @@
+<script setup>
+const { locale } = useI18n();
+</script>
 <template>
   <form>
     <label for="languages">
