@@ -108,8 +108,9 @@
    Modal
    -------------------------------------------------------------------------- */
 .cookieControl__Modal {
-  @apply fixed inset-0 z-[1000] flex items-center overflow-y-auto px-4 py-6 shadow-xl ring-1  drop-shadow-sm backdrop-blur-[.125em] md:px-0;
+  @apply fixed inset-0 z-[1000] flex items-center overflow-y-auto px-4 py-6 shadow-xl ring-1  drop-shadow-sm backdrop-blur-[.125em];
   background: rgba(0, 0, 0, 0.25);
+  @apply pt-[5rem] md:pt-0;
 }
 .cookieControl__ModalUnsaved {
   @apply fixed bottom-0 left-0 right-0 z-50 mx-auto mb-5 border  p-3 text-center text-sm sm:bottom-6 sm:left-16 sm:right-16 sm:max-w-sm sm:rounded-md;
