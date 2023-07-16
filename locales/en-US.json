@@ -1,4 +1,6 @@
 {
+  "locale.en-US": "English",
+  "locale.fr-FR": "French",
   "themes": {
     "system": "System",
     "light": "Light",

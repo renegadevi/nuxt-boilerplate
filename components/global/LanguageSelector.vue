@@ -1,16 +1,17 @@
-<script setup>
-const { locale } = useI18n();
-</script>
 <template>
   <form>
-    <label for="languages"><Icon name="prime:language" size="1.5em" /></label>
-    <select
-      id="languages"
-      v-model="locale"
-      class="border-1 border-l-3 mx-1 inline-block border-gray-900 bg-inherit text-sm"
-    >
-      <option value="en-US">English</option>
-      <option value="fr-FR">French</option>
+    <label for="languages">
+      <Icon name="prime:language" size="1.5em" />
+    </label>
+    <select v-model="$i18n.locale" class="bg-transparent">
+      <option
+        v-for="language in $i18n.availableLocales"
+        :key="language"
+        :value="language"
+        :selected="$i18n.locale === language"
+      >
+        {{ $t("locale." + language) }}
+      </option>
     </select>
   </form>
 </template>
