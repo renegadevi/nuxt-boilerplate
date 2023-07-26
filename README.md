@@ -71,3 +71,11 @@ Check out the [deployment documentation](https://nuxt.com/docs/getting-started/d
 - [color-mode](https://nuxt.com/modules/color-mode)
 - [icon](https://nuxt.com/modules/icon)
 - [cookie-control](https://nuxt.com/modules/cookie-control)
+
+## Optional: Component Viewer
+
+If you are looking for a component viewer while building and designing components, I made this extension for nuxt. Drop in the `_components.vue` into the `Pages` directory and go to `/_components`
+
+https://github.com/renegadevi/nuxt-component-viewer
+
+![nuxt-component-viewer](https://raw.githubusercontent.com/renegadevi/nuxt-component-viewer/6ca97e434ccd52d0949712ca39420529d37b3b5b/.github/screenshot-1.png)
