@@ -74,7 +74,7 @@ Check out the [deployment documentation](https://nuxt.com/docs/getting-started/d
 
 ## Optional: Component Viewer
 
-If you are looking for a component viewer while building and designing components, I made this extension for nuxt. Drop in the `_components.vue` into the `Pages` directory and go to `/_components`
+If you are looking for a component viewer while building and designing components, I made this extension for nuxt. Drop in the `_components.vue` into the `Pages` directory, make sure you have a `blank.vue` in Layouts that's just a `<Slot />`,  and go to `/_components`
 
 https://github.com/renegadevi/nuxt-component-viewer
 
