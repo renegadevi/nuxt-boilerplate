@@ -34,7 +34,7 @@ useLocaleHead({
         </NuxtLink>
         <div class="flex flex-col sm:flex-row">
           <div
-            class="mx-2 rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-slate-800 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500 inline-flex mb-3 sm:mb-0"
+            class="mx-2 mb-3 inline-flex rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-slate-800 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500 sm:mb-0"
           >
             <ThemeSwitcher />
           </div>
@@ -79,12 +79,7 @@ useLocaleHead({
                 target="_blank"
                 to="https://github.com/renegadevi/nuxt-boilerplate"
                 ><span class="dark:hidden"
-                  ><Icon
-                    name="mdi:github"
-                    size="auto"
-                    color="black"
-
-                  />
+                  ><Icon name="mdi:github" size="auto" color="black" />
                 </span>
                 <span class="hidden dark:block">
                   <Icon
@@ -94,8 +89,7 @@ useLocaleHead({
                     class="hidden dark:block"
                   />
                 </span>
-                </NuxtLink
-              >
+              </NuxtLink>
             </li>
           </ul>
         </div>
