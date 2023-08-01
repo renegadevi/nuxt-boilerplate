@@ -1,6 +1,9 @@
 {
   "locale.en-US": "English",
   "locale.fr-FR": "French",
+  "site": {
+    "name": "Nuxt Boilerplate"
+  },
   "themes": {
     "system": "System",
     "light": "Light",

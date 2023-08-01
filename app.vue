@@ -1,9 +1,10 @@
 <script setup lang="ts">
+const { t } = useI18n();
 useHead({
   titleTemplate: (titleChunk) => {
     return titleChunk
-      ? `${titleChunk} - Nuxt3 Boilerplate`
-      : "Nuxt3 Boilerplate";
+      ? `${titleChunk} - ${t("site.name")}`
+      : `${t("site.name")}`;
   },
 });
 </script>
