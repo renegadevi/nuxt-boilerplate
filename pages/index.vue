@@ -10,8 +10,13 @@ useSeoMeta({
 });
 </script>
 <template>
-  <div class="mb-10 flex justify-center pb-5">
-    <section>
+  <!--
+
+    Template below is intended to be removed..
+
+  -->
+  <div class="mb-10 mt-5 flex justify-center">
+    <section class="w-full max-w-3xl">
       <div
         class="relative overflow-hidden border-b border-gray-200 pb-5 text-center dark:border-gray-600"
       >
@@ -39,97 +44,88 @@ useSeoMeta({
         </div>
       </div>
 
-      <div class="container py-8 text-center">
-        <h2 class="mt-1 pb-4 text-3xl font-semibold">
-          {{ $t("pages.index.features.title") }}
-        </h2>
-        <p
-          class="prose dark:prose-invert font-light text-slate-500 dark:text-slate-100"
-        >
-          {{ $t("pages.index.features.description") }}
-        </p>
-      </div>
-
-      <ul class="grid sm:grid-cols-1 lg:ms-[7rem] lg:grid-cols-4">
-        <li class="py-1">
+      <ul
+        class="mt-8 grid sm:grid-cols-2 lg:ml-12 lg:grid-cols-3 rtl:lg:ml-0 rtl:lg:mr-12"
+      >
+        <li class="py-2">
           <Icon
             name="heroicons:check-circle"
             class="me-2 text-3xl text-green-500 dark:text-green-300"
           />{{ $t("pages.index.features.googleFonts") }}
         </li>
-        <li class="py-1">
+        <li class="py-2">
           <Icon
             name="heroicons:check-circle"
             class="me-2 text-3xl text-green-500 dark:text-green-300"
           />{{ $t("pages.index.features.TailwindCSS") }}
         </li>
-        <li class="py-1">
+        <li class="py-2">
           <Icon
             name="heroicons:check-circle"
             class="me-2 text-3xl text-green-500 dark:text-green-300"
           />{{ $t("pages.index.features.Prettier") }}
         </li>
-        <li class="py-1">
+        <li class="py-2">
           <Icon
             name="heroicons:check-circle"
             class="me-2 text-3xl text-green-500 dark:text-green-300"
           />{{ $t("pages.index.features.cookies") }}
         </li>
-        <li class="py-1">
+        <li class="py-2">
           <Icon
             name="heroicons:check-circle"
             class="me-2 text-3xl text-green-500 dark:text-green-300"
           />{{ $t("pages.index.features.eslint") }}
         </li>
-        <li class="py-1">
+        <li class="py-2">
           <Icon
             name="heroicons:check-circle"
             class="me-2 text-3xl text-green-500 dark:text-green-300"
           />{{ $t("pages.index.features.darkMode") }}
         </li>
-        <li class="py-1">
+        <li class="py-2">
           <Icon
             name="heroicons:check-circle"
             class="me-2 text-3xl text-green-500 dark:text-green-300"
           />{{ $t("pages.index.features.i18n") }}
         </li>
-        <li class="py-1">
+        <li class="py-2">
           <Icon
             name="heroicons:check-circle"
             class="me-2 text-3xl text-green-500 dark:text-green-300"
           />{{ $t("pages.index.features.Iconify") }}
         </li>
-        <li class="py-1">
+        <li class="py-2">
           <Icon
             name="heroicons:check-circle"
             class="me-2 text-3xl text-green-500 dark:text-green-300"
           />{{ $t("pages.index.features.Typescript") }}
         </li>
-        <li class="py-1">
+        <li class="py-2">
           <Icon
             name="heroicons:check-circle"
             class="me-2 text-3xl text-green-500 dark:text-green-300"
           />{{ $t("pages.index.features.postcss") }}
         </li>
-        <li class="py-1">
+        <li class="py-2">
           <Icon
             name="heroicons:check-circle"
             class="me-2 text-3xl text-green-500 dark:text-green-300"
           />{{ $t("pages.index.features.deviceDetect") }}
         </li>
-        <li class="py-1">
+        <li class="py-2">
           <Icon
             name="heroicons:check-circle"
             class="shape-geometric-precision me-2 text-3xl text-green-500 dark:text-green-300"
           />{{ $t("pages.index.features.Pinia") }}
         </li>
-        <li class="py-1">
+        <li class="py-2">
           <Icon
             name="heroicons:check-circle"
             class="shape-geometric-precision me-2 text-3xl text-green-500 dark:text-green-300"
           />{{ $t("pages.index.features.imageOptim") }}
         </li>
-        <li class="py-1">
+        <li class="py-2">
           <Icon
             name="heroicons:check-circle"
             class="shape-geometric-precision me-2 text-3xl text-green-500 dark:text-green-300"

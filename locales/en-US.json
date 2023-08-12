@@ -42,8 +42,6 @@
         "description": "A ready to use starter kit for all kinds of projects"
       },
       "features": {
-        "title": "Features",
-        "description": "Here is a list of plugin and features added to to create this boilerplate",
         "googleFonts": "Google Fonts",
         "eslint": "ESLint",
         "Typescript": "Typescript",
@@ -53,7 +51,7 @@
         "darkMode": "Dark mode",
         "i18n": "Localization (i18n)",
         "postcss": "PostCSS",
-        "lightHouse": "LightHouse 100%",
+        "lightHouse": "Lighthouse 100%",
         "deviceDetect": "Device detection",
         "cookies": "Cookie banner",
         "Iconify": "Iconify",
