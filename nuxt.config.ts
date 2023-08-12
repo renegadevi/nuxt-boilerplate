@@ -2,6 +2,7 @@
 import { defineNuxtConfig } from "nuxt/config";
 import en from "./locales/en-US.json";
 import fr from "./locales/fr-FR.json";
+import ar from "./locales/ar-AR.json";
 
 export default defineNuxtConfig({
   devtools: { enabled: true },
@@ -84,16 +85,18 @@ export default defineNuxtConfig({
           name: {
             fr: fr.cookies.necessary.title,
             en: en.cookies.necessary.title,
+            ar: ar.cookies.necessary.title,
           },
           description: {
             fr: fr.cookies.necessary.description,
             en: en.cookies.necessary.description,
+            ar: ar.cookies.necessary.description,
           },
           targetCookieIds: ["ncc_"],
         },
       ],
       optional: [],
     },
-    locales: ["en", "fr"],
+    locales: ["en", "fr", "ar"],
   },
 });

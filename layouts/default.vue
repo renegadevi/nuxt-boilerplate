@@ -1,9 +1,13 @@
 <script setup>
 // This is just the boilerplate. It's intended to be removed.
 const { locale } = useI18n();
+
 useHead({
   htmlAttrs: {
     lang: locale,
+    dir: computed(() => {
+      return locale.value === "ar-AR" ? "rtl" : "ltr";
+    }),
   },
 });
 useLocaleHead({
