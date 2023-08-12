@@ -1,5 +1,6 @@
 <script setup>
-const { locale } = useI18n(); // eslint-disable-line
+const { locale } = useI18n();
+
 // update local storage upon language change
 const toggleLocale = () => {
   localStorage.setItem("nuxt-lang", locale.value);
