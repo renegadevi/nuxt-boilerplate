@@ -4,7 +4,7 @@ A ready to use Nuxt 3 boilerplate
 
 **Demo**: https://nuxt-boilerplate.onrender.com/
 
-![screenshot](https://github.com/renegadevi/nuxt-boilerplate/blob/e806bae6efec29a19579d7cf76ef683ffe980917/.github/screenshot.png)
+![screenshot](https://raw.githubusercontent.com/renegadevi/nuxt-boilerplate/main/.github/screenshot.png)
 ![lighthouse](https://github.com/renegadevi/nuxt-boilerplate/blob/e806bae6efec29a19579d7cf76ef683ffe980917/.github/lighthouse.png)
 
 ## Setup
