@@ -41,8 +41,5 @@
     "prettier": "^2.8.8",
     "prettier-plugin-tailwindcss": "^0.3.0",
     "typescript": "5.0.2"
-  },
-  "dependencies": {
-    "@vueuse/nuxt": "^10.3.0"
   }
 }

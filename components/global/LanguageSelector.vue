@@ -1,5 +1,17 @@
 <script setup>
-const { toggleLocale } = useAppLocale();
+const { locale } = useI18n(); // eslint-disable-line
+// update local storage upon language change
+const toggleLocale = () => {
+  localStorage.setItem("nuxt-lang", locale.value);
+};
+
+// check for stored language on initial load.
+onMounted(() => {
+  const storedLanguage = localStorage.getItem("nuxt-lang");
+  if (storedLanguage) {
+    locale.value = storedLanguage;
+  }
+});
 </script>
 <template>
   <form>
