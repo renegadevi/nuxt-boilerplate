@@ -69,7 +69,7 @@ Check out the [deployment documentation](https://nuxt.com/docs/getting-started/d
 - [color-mode](https://nuxt.com/modules/color-mode)
 - [icon](https://nuxt.com/modules/icon)
 - [cookie-control](https://nuxt.com/modules/cookie-control)
-- [VueUse](https://nuxt.com/modules/vueuse)
+
 
 ## Optional: Component Viewer
 
