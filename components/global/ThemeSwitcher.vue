@@ -6,9 +6,15 @@
       v-model="$colorMode.preference"
       class="border-1 border-l-3 mx-1 inline-block border-gray-900 bg-inherit text-sm"
     >
-      <option value="system">{{ $t("themes.system") }}</option>
-      <option value="light">{{ $t("themes.light") }}</option>
-      <option value="dark">{{ $t("themes.dark") }}</option>
+      <option class="dark:bg-slate-800" value="system">
+        {{ $t("themes.system") }}
+      </option>
+      <option class="dark:bg-slate-800" value="light">
+        {{ $t("themes.light") }}
+      </option>
+      <option class="dark:bg-slate-800" value="dark">
+        {{ $t("themes.dark") }}
+      </option>
     </select>
   </form>
 </template>

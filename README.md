@@ -7,8 +7,6 @@ A ready to use Nuxt 3 boilerplate
 ![screenshot](https://github.com/renegadevi/nuxt-boilerplate/blob/e806bae6efec29a19579d7cf76ef683ffe980917/.github/screenshot.png)
 ![lighthouse](https://github.com/renegadevi/nuxt-boilerplate/blob/e806bae6efec29a19579d7cf76ef683ffe980917/.github/lighthouse.png)
 
-
-
 ## Setup
 
 ### Prerequisites:
@@ -58,8 +56,8 @@ pnpm run build;pnpm run preview-https
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
 
-
 ## Nuxt Modules included:
+
 - [eslint](https://nuxt.com/modules/eslint)
 - [pinia](https://nuxt.com/modules/pinia)
 - [tailwindcss](https://nuxt.com/modules/tailwindcss)
@@ -71,10 +69,11 @@ Check out the [deployment documentation](https://nuxt.com/docs/getting-started/d
 - [color-mode](https://nuxt.com/modules/color-mode)
 - [icon](https://nuxt.com/modules/icon)
 - [cookie-control](https://nuxt.com/modules/cookie-control)
+- [VueUse](https://nuxt.com/modules/vueuse)
 
 ## Optional: Component Viewer
 
-If you are looking for a component viewer while building and designing components, I made this extension for nuxt. Drop in the `_components.vue` into the `Pages` directory, make sure you have a `blank.vue` in Layouts that's just a `<Slot />`,  and go to `/_components`
+If you are looking for a component viewer while building and designing components, I made this extension for nuxt. Drop in the `_components.vue` into the `Pages` directory, make sure you have a `blank.vue` in Layouts that's just a `<Slot />`, and go to `/_components`
 
 https://github.com/renegadevi/nuxt-component-viewer
 
