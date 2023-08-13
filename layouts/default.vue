@@ -1,14 +1,4 @@
-<script setup>
-// This script setup is a sensable setup for most with a language switcher.
-const { locale } = useI18n();
-useHead({
-  htmlAttrs: {
-    lang: locale,
-    dir: computed(() => {
-      return locale.value === "ar-AR" ? "rtl" : "ltr";
-    }),
-  },
-});
+<script setup lang="ts">
 useLocaleHead({
   addDirAttribute: true,
   identifierAttribute: "id",
