@@ -97,6 +97,5 @@ export default defineNuxtConfig({
       ],
       optional: [],
     },
-    locales: ["en", "fr", "ar"],
   },
 });
