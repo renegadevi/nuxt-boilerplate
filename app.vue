@@ -1,10 +1,14 @@
 <script setup lang="ts">
-const { t } = useI18n();
+const { locale, t } = useI18n();
 useHead({
-  titleTemplate: (titleChunk) => {
-    return titleChunk
-      ? `${titleChunk} - ${t("site.name")}`
-      : `${t("site.name")}`;
+  htmlAttrs: {
+    lang: locale,
+    dir: computed(() => {
+      return t("locale.dir") as "ltr" | "rtl" | "auto";
+    }),
+  },
+  titleTemplate(title) {
+    return title ? `${title} - ${t("site.name")}` : `${t("site.name")}`;
   },
 });
 </script>

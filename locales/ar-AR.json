@@ -2,6 +2,7 @@
   "locale.en-US": "الإنجليزية",
   "locale.fr-FR": "الفرنسية",
   "locale.ar-AR": "العربية",
+  "locale.dir": "rtl",
   "site": {
     "name": "قالب Nuxt"
   },

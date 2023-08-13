@@ -2,6 +2,7 @@
   "locale.en-US": "Anglais",
   "locale.fr-FR": "Français",
   "locale.ar-AR": "Arabe",
+  "locale.dir": "ltr",
   "site": {
     "name": "Nuxt Boilerplate"
   },
