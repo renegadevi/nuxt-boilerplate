@@ -2,3 +2,13 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 @import "cookiecontrol.css";
+
+@layer base {
+  select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+}
