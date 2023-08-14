@@ -1,4 +1,6 @@
-module.exports = {
+import { type Config } from "tailwindcss";
+
+export default {
   // content: ["./src/**/*.{html,js}"],
   darkMode: "class",
   theme: {
@@ -40,4 +42,4 @@ module.exports = {
   //     pattern: /bg-(red|green|blue)-(100|200|300)/,
   //   },
   // ]
-};
+} satisfies Config;
