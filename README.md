@@ -16,6 +16,12 @@ A ready to use Nuxt 3 boilerplate
 - [pnpm](https://pnpm.io/)
 - [mkcert](https://github.com/FiloSottile/mkcert) (Optional localhost HTTPS)
 
+### Clone repo
+```bash
+git clone https://github.com/renegadevi/nuxt-boilerplate.git
+cd nuxt-boilerplate
+```
+
 ### Install dependencies:
 
 ```bash
