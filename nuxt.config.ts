@@ -33,6 +33,14 @@ export default defineNuxtConfig({
     exposeConfig: false,
     viewer: true,
   },
+  postcss: {
+    plugins: {
+      "postcss-import": {},
+      tailwindcss: {},
+      autoprefixer: {},
+    },
+  },
+
   imports: {
     dirs: ["./stores", "./locales"],
   },
