@@ -22,6 +22,7 @@ onMounted(() => {
     <select
       v-model="$i18n.locale"
       class="bg-transparent"
+      id="languages"
       @change="toggleLocale"
     >
       <option
