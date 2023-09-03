@@ -97,7 +97,7 @@ useLocaleHead({
       <slot />
     </div>
     <footer
-      class="dark:text-300 py-20 text-center text-sm text-gray-600 dark:bg-slate-900"
+      class="dark:text-300 py-20 text-center text-sm text-gray-400 dark:bg-slate-900"
     >
       <p>© {{ new Date().getFullYear() }} - {{ $t("site.name") }}</p>
     </footer>
