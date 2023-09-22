@@ -20,9 +20,9 @@ onMounted(() => {
       <Icon name="prime:language" size="1.5em" />
     </label>
     <select
+      id="languages"
       v-model="$i18n.locale"
       class="bg-transparent"
-      id="languages"
       @change="toggleLocale"
     >
       <option
