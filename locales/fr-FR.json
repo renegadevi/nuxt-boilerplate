@@ -67,6 +67,15 @@
       "link": "À propos",
       "title": "À propos",
       "p": "Dans un jardin luxuriant, tout est calme et sérénité. Des fleurs aux couleurs vives se mêlent aux feuillages sombres des grands arbres. Le parfum sucré des roses embaume l'air tandis que le vent fait danser les feuilles. On entend le chant mélodieux des oiseaux, comme une symphonie naturelle qui ne cesse jamais. Dans ce havre de paix, on se sent loin du monde, enveloppé par la beauté et la quiétude de la nature."
+    },
+    "minimal": {
+      "meta": {
+        "title": "Page minimale (mise en page plein écran)",
+        "description": "Page minimale utilisant la mise en page plein écran"
+      },
+      "link": "Minimale",
+      "title": "Page minimale (mise en page plein écran)",
+      "p": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque iste atque, hic porro officiis fugit quae deserunt nobis dolorum odit dignissimos consequatur esse maiores repellat impedit. Quae dolorum id rem?"
     }
   }
 }
