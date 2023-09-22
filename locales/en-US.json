@@ -67,6 +67,15 @@
       "link": "About",
       "title": "About",
       "p": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque iste atque, hic porro officiis fugit quae deserunt nobis dolorum odit dignissimos consequatur esse maiores repellat impedit. Quae dolorum id rem?"
+    },
+    "minimal": {
+      "meta": {
+        "title": "Minimal page (Fullscreen-layout)",
+        "description": "Minimal page using Fullscreen-layout"
+      },
+      "link": "Minimal",
+      "title": "Minimal with Fullscreen-layout",
+      "p": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque iste atque, hic porro officiis fugit quae deserunt nobis dolorum odit dignissimos consequatur esse maiores repellat impedit. Quae dolorum id rem?"
     }
   }
 }

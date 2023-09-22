@@ -65,6 +65,13 @@ useLocaleHead({
           <li class="h-full">
             <NuxtLink
               class="flex h-full w-full items-center justify-center rounded-lg border border-slate-200 bg-gray-50 px-4 text-gray-700 hover:cursor-pointer hover:border-slate-200 hover:bg-slate-200 dark:border-gray-700 dark:bg-slate-800 dark:text-white dark:hover:bg-slate-700"
+              to="/minimal"
+              >{{ $t("pages.minimal.link") }}</NuxtLink
+            >
+          </li>
+          <li class="h-full">
+            <NuxtLink
+              class="flex h-full w-full items-center justify-center rounded-lg border border-slate-200 bg-gray-50 px-4 text-gray-700 hover:cursor-pointer hover:border-slate-200 hover:bg-slate-200 dark:border-gray-700 dark:bg-slate-800 dark:text-white dark:hover:bg-slate-700"
               to="/404"
               >404</NuxtLink
             >
