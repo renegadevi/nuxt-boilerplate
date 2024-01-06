@@ -101,9 +101,8 @@
   @apply whitespace-nowrap rounded-lg border px-5 py-2.5 text-sm font-medium  transition duration-150 ease-in-out focus:z-10 focus:outline-none focus:ring-4;
 }
 .cookieControl__BarButtons button:nth-child(1) {
-  @apply md:ml-3 whitespace-nowrap rounded-lg  px-5 py-2.5 text-sm font-medium  transition duration-150 ease-in-out  focus:z-10 focus:outline-none focus:ring-4;
+  @apply whitespace-nowrap rounded-lg px-5  py-2.5 text-sm font-medium transition  duration-150 ease-in-out focus:z-10  focus:outline-none focus:ring-4 md:ml-3;
   @apply rtl:ml-0;
-
 }
 
 /* --------------------------------------------------------------------------
@@ -157,7 +156,7 @@
   @apply border-b font-bold;
 }
 .cookieControl__ModalContentInner {
-  @apply max-h-[90vh] md:max-h-[80vh] overflow-y-scroll;
+  @apply max-h-[90vh] overflow-y-scroll md:max-h-[80vh];
 }
 .cookieControl__ModalContentInner ul li {
   @apply relative my-3 rounded-md p-5;
@@ -183,13 +182,13 @@
   @apply rtl:sm:flex-row;
 }
 .cookieControl__ModalButtons button {
-  @apply flex-row whitespace-nowrap rounded-lg border px-5 py-2.5 text-sm font-medium transition duration-150 ease-in-out focus:z-10 focus:outline-none focus:ring-4 mb-3 md:mb-0;
+  @apply mb-3 flex-row whitespace-nowrap rounded-lg border px-5 py-2.5 text-sm font-medium transition duration-150 ease-in-out focus:z-10 focus:outline-none focus:ring-4 md:mb-0;
 }
 .cookieControl__ModalButtons button:nth-child(3) {
   @apply sm:absolute sm:left-0;
 }
 .cookieControl__ModalButtons button:nth-child(1) {
-  @apply sm:ml-2 whitespace-nowrap rounded-lg px-5 py-2.5 text-sm font-medium transition duration-150 ease-in-out focus:z-10 focus:outline-none focus:ring-4;
+  @apply whitespace-nowrap rounded-lg px-5 py-2.5 text-sm font-medium transition duration-150 ease-in-out focus:z-10 focus:outline-none focus:ring-4 sm:ml-2;
 }
 
 /* -----------------------------------------------------------------------------

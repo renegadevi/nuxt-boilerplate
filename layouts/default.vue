@@ -31,7 +31,7 @@ useLocaleHead({
           />
         </NuxtLink>
         <div
-          class="flex flex-col space-x-3 space-y-4 rtl:space-x-reverse sm:flex-row sm:space-y-0"
+          class="flex flex-col space-x-3 space-y-4 sm:flex-row sm:space-y-0 rtl:space-x-reverse"
         >
           <ThemeSwitcher
             class="inline-flex rounded-lg border border-gray-200 bg-gray-50 p-2.5 text-sm text-gray-900 dark:border-gray-700 dark:bg-slate-800 dark:text-white"

@@ -10,6 +10,7 @@ A ready to use Nuxt 3 boilerplate
 ![lighthouse](https://github.com/renegadevi/nuxt-boilerplate/blob/e806bae6efec29a19579d7cf76ef683ffe980917/.github/lighthouse.png)
 
 ## Quick setup (TLDR;)
+
 ```bash
 git clone https://github.com/renegadevi/nuxt-boilerplate.git
 cd nuxt-boilerplate
@@ -25,6 +26,7 @@ pnpm run dev
 - [mkcert](https://github.com/FiloSottile/mkcert) (Optional localhost HTTPS)
 
 ### Clone repo
+
 ```bash
 git clone https://github.com/renegadevi/nuxt-boilerplate.git
 cd nuxt-boilerplate
@@ -85,7 +87,6 @@ Check out the [deployment documentation](https://nuxt.com/docs/getting-started/d
 - [color-mode](https://nuxt.com/modules/color-mode)
 - [icon](https://nuxt.com/modules/icon)
 - [cookie-control](https://nuxt.com/modules/cookie-control)
-
 
 ## Optional: Component Viewer
 
