@@ -4,11 +4,14 @@ export default {
   // content: ["./src/**/*.{html,js}"],
   darkMode: "class",
   theme: {
+    fontFamily: {
+      sans: ["Inter"],
+      serif: ["serif"],
+      mono: ["monospace"],
+      display: ["Inter"],
+      body: ["Inter"],
+    },
     extend: {
-      fontFamily: {
-        display: ["Inter"],
-        body: ["Inter"],
-      },
       colors: {
         "nuxt-green": "#00DC82",
         "nuxt-white": "#ffffff",

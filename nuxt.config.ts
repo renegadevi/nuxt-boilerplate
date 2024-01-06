@@ -10,11 +10,6 @@ export default defineNuxtConfig({
     compressPublicAssets: true,
     logLevel: 4,
   },
-  // This is a fix for tailwind+i18n in production mode
-  // https://github.com/nuxt-modules/i18n/issues/2177
-  experimental: {
-    inlineSSRStyles: false,
-  },
   modules: [
     "@nuxtjs/eslint-module",
     "@pinia/nuxt",
