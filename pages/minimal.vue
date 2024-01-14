@@ -13,21 +13,19 @@ definePageMeta({
 });
 </script>
 <template>
-  <NuxtLayout>
-    <div class="p-3">
-      <h1 class="text-4xl">{{ $t("pages.minimal.title") }}</h1>
-      <main class="mt-4 text-slate-500 dark:text-slate-400 [&>*]:mb-4">
-        <p>
-          {{ $t("pages.minimal.p") }}
-        </p>
-        <p>
-          {{ $t("pages.minimal.p") }}
-        </p>
-        <p>{{ $t("pages.minimal.p") }} {{ $t("pages.minimal.p") }}</p>
-        <p>
-          {{ $t("pages.minimal.p") }}
-        </p>
-      </main>
-    </div>
-  </NuxtLayout>
+  <div class="p-3">
+    <h1 class="text-4xl">{{ $t("pages.minimal.title") }}</h1>
+    <main class="mt-4 text-slate-500 dark:text-slate-400 [&>*]:mb-4">
+      <p>
+        {{ $t("pages.minimal.p") }}
+      </p>
+      <p>
+        {{ $t("pages.minimal.p") }}
+      </p>
+      <p>{{ $t("pages.minimal.p") }} {{ $t("pages.minimal.p") }}</p>
+      <p>
+        {{ $t("pages.minimal.p") }}
+      </p>
+    </main>
+  </div>
 </template>

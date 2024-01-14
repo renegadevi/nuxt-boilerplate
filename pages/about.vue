@@ -10,21 +10,19 @@ useSeoMeta({
 });
 </script>
 <template>
-  <NuxtLayout>
-    <div class="p-5">
-      <h1 class="text-4xl">{{ $t("pages.about.title") }}</h1>
-      <main class="mt-4 text-slate-500 dark:text-slate-400 [&>*]:mb-4">
-        <p>
-          {{ $t("pages.about.p") }}
-        </p>
-        <p>
-          {{ $t("pages.about.p") }}
-        </p>
-        <p>{{ $t("pages.about.p") }} {{ $t("pages.about.p") }}</p>
-        <p>
-          {{ $t("pages.about.p") }}
-        </p>
-      </main>
-    </div>
-  </NuxtLayout>
+  <div class="p-5">
+    <h1 class="text-4xl">{{ $t("pages.about.title") }}</h1>
+    <main class="mt-4 text-slate-500 dark:text-slate-400 [&>*]:mb-4">
+      <p>
+        {{ $t("pages.about.p") }}
+      </p>
+      <p>
+        {{ $t("pages.about.p") }}
+      </p>
+      <p>{{ $t("pages.about.p") }} {{ $t("pages.about.p") }}</p>
+      <p>
+        {{ $t("pages.about.p") }}
+      </p>
+    </main>
+  </div>
 </template>
