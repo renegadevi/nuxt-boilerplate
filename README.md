@@ -2,7 +2,7 @@
 
 A ready to use Nuxt 3 boilerplate
 
-**Live Demo**: https://nuxt-boilerplate.onrender.com/
+**Live Demo**: https://nuxt-boilerplate-main.vercel.app/
 
 **StackBlitz**: https://stackblitz.com/github/renegadevi/nuxt-boilerplate
 
