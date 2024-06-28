@@ -11,7 +11,7 @@ export default defineNuxtConfig({
     logLevel: 4,
   },
   modules: [
-    "@nuxtjs/eslint-module",
+    "@nuxt/eslint",
     "@pinia/nuxt",
     "@nuxtjs/device",
     "nuxt-icon",
@@ -66,6 +66,12 @@ export default defineNuxtConfig({
   },
   i18n: {
     vueI18n: "./i18n.config.ts",
+    detectBrowserLanguage: {
+      useCookie: false,
+      alwaysRedirect: true,
+      fallbackLocale: "en-US",
+      redirectOn: "root", // recommended
+    },
   },
   eslint: {
     lintOnStart: false,
@@ -96,6 +102,7 @@ export default defineNuxtConfig({
             ar: ar.cookies.necessary.description,
           },
           targetCookieIds: ["ncc_"],
+          id: "",
         },
       ],
       optional: [],
