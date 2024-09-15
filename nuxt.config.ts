@@ -6,10 +6,12 @@ import ar from "./locales/ar-AR.json";
 
 export default defineNuxtConfig({
   devtools: { enabled: true },
+
   nitro: {
     compressPublicAssets: true,
     logLevel: 4,
   },
+
   modules: [
     "@nuxt/eslint",
     "@pinia/nuxt",
@@ -22,12 +24,14 @@ export default defineNuxtConfig({
     "@nuxtjs/i18n",
     "@dargmuesli/nuxt-cookie-control",
   ],
+
   tailwindcss: {
     cssPath: "~/assets/css/tailwind.css",
     configPath: "tailwind.config.ts",
     exposeConfig: false,
     viewer: true,
   },
+
   postcss: {
     plugins: {
       "postcss-import": {},
@@ -39,23 +43,24 @@ export default defineNuxtConfig({
   imports: {
     dirs: ["./stores", "./locales"],
   },
-  pinia: {
-    autoImports: ["defineStore", "acceptHMRUpdate"],
-  },
+
   app: {
     head: {
       charset: "utf-8",
       viewport: "width=device-width, initial-scale=1",
     },
   },
+
   colorMode: {
     classSuffix: "",
   },
+
   image: {
     provider: "ipx",
     quality: 80,
     format: ["png", "jpeg", "webp"],
   },
+
   googleFonts: {
     families: {
       Inter: true,
@@ -64,6 +69,7 @@ export default defineNuxtConfig({
     prefetch: true,
     preconnect: true,
   },
+
   i18n: {
     vueI18n: "./i18n.config.ts",
     detectBrowserLanguage: {
@@ -73,9 +79,11 @@ export default defineNuxtConfig({
       redirectOn: "root", // recommended
     },
   },
+
   eslint: {
     lintOnStart: false,
   },
+
   cookieControl: {
     cookieExpiryOffsetMs: 1000 * 60 * 60 * 24 * 365, // one year
     // set all these to true for highest GDPR enforcement
@@ -109,4 +117,6 @@ export default defineNuxtConfig({
     },
     locales: ["en", "fr", "ar"],
   },
+
+  compatibilityDate: "2024-09-15",
 });
