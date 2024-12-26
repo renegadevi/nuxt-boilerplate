@@ -40,7 +40,10 @@
       "hero": {
         "title": "Nuxt Boilerplate",
         "subtitle": "Non officiel",
-        "description": "Un kit de démarrage prêt à l'emploi pour toutes sortes de projets"
+        "description": "Un kit de démarrage prêt à l'emploi pour toutes sortes de projets",
+        "tagline-start": "Rempli de",
+        "tagline-highlight": "fonctionnalités",
+        "tagline-end": "à utiliser"
       },
       "features": {
         "googleFonts": "Polices Google",
@@ -56,16 +59,17 @@
         "deviceDetect": "Détection de périphérique",
         "cookies": "Bannière de cookies",
         "Iconify": "Iconify",
-        "Pinia": "Pinia"
+        "Pinia": "Pinia",
+        "enterprise": "Prêt pour l'entreprise"
       }
     },
-    "about": {
+    "another-page": {
       "meta": {
-        "title": "À propos",
-        "description": "À propos"
+        "title": "Une autre page",
+        "description": "Une autre page"
       },
-      "link": "À propos",
-      "title": "À propos",
+      "link": "Une autre page",
+      "title": "Une autre page",
       "p": "Dans un jardin luxuriant, tout est calme et sérénité. Des fleurs aux couleurs vives se mêlent aux feuillages sombres des grands arbres. Le parfum sucré des roses embaume l'air tandis que le vent fait danser les feuilles. On entend le chant mélodieux des oiseaux, comme une symphonie naturelle qui ne cesse jamais. Dans ce havre de paix, on se sent loin du monde, enveloppé par la beauté et la quiétude de la nature."
     },
     "minimal": {
@@ -75,7 +79,7 @@
       },
       "link": "Minimale",
       "title": "Page minimale (mise en page plein écran)",
-      "p": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque iste atque, hic porro officiis fugit quae deserunt nobis dolorum odit dignissimos consequatur esse maiores repellat impedit. Quae dolorum id rem?"
+      "p": "Dans un jardin luxuriant, tout est calme et sérénité. Des fleurs aux couleurs vives se mêlent aux feuillages sombres des grands arbres. Le parfum sucré des roses embaume l'air tandis que le vent fait danser les feuilles. On entend le chant mélodieux des oiseaux, comme une symphonie naturelle qui ne cesse jamais. Dans ce havre de paix, on se sent loin du monde, enveloppé par la beauté et la quiétude de la nature."
     }
   }
 }

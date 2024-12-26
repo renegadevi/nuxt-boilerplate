@@ -7,6 +7,12 @@ import ar from "./locales/ar-AR.json";
 export default defineNuxtConfig({
   devtools: { enabled: true },
 
+  runtimeConfig: {
+    public: {
+      baseUrl: process.env.VITE_BASE_URL //  || 'http://localhost:3000'
+    }
+  },
+
   nitro: {
     compressPublicAssets: true,
     logLevel: 4,
@@ -16,7 +22,7 @@ export default defineNuxtConfig({
     "@nuxt/eslint",
     "@pinia/nuxt",
     "@nuxtjs/device",
-    "nuxt-icon",
+    "@nuxt/icon",
     "@nuxt/image",
     "@nuxtjs/tailwindcss",
     "@nuxtjs/google-fonts",
@@ -56,7 +62,7 @@ export default defineNuxtConfig({
   },
 
   image: {
-    provider: "ipx",
+    provider: "ipx", // change to e.g 'vercel' if hosted on vercel
     quality: 80,
     format: ["png", "jpeg", "webp"],
   },
@@ -71,6 +77,7 @@ export default defineNuxtConfig({
   },
 
   i18n: {
+    baseUrl: process.env.VITE_BASE_URL,
     vueI18n: "./i18n.config.ts",
     detectBrowserLanguage: {
       useCookie: false,
@@ -82,6 +89,10 @@ export default defineNuxtConfig({
 
   eslint: {
     lintOnStart: false,
+  },
+
+  pinia: {
+    autoImports: ['defineStore', 'acceptHMRUpdate'],
   },
 
   cookieControl: {
@@ -97,26 +108,24 @@ export default defineNuxtConfig({
     isCssEnabled: false,
     isDashInDescriptionEnabled: false,
     cookies: {
-      necessary: [
-        {
-          name: {
-            fr: fr.cookies.necessary.title,
-            en: en.cookies.necessary.title,
-            ar: ar.cookies.necessary.title,
-          },
-          description: {
-            fr: fr.cookies.necessary.description,
-            en: en.cookies.necessary.description,
-            ar: ar.cookies.necessary.description,
-          },
-          targetCookieIds: ["ncc_"],
-          id: "",
+      necessary: [{
+        name: {
+          fr: fr.cookies.necessary.title,
+          en: en.cookies.necessary.title,
+          ar: ar.cookies.necessary.title,
         },
-      ],
+        description: {
+          fr: fr.cookies.necessary.description,
+          en: en.cookies.necessary.description,
+          ar: ar.cookies.necessary.description,
+        },
+        isPreselected: true,
+        id: "necessary"
+      }],
       optional: [],
     },
     locales: ["en", "fr", "ar"],
   },
 
-  compatibilityDate: "2024-09-15",
+  compatibilityDate: "2024-12-26",
 });

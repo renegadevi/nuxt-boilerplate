@@ -1,6 +1,13 @@
 // @ts-check
-import withNuxt from './.nuxt/eslint.config.mjs'
+import nuxtConfig from './.nuxt/eslint.config.mjs'
+const baseConfig = Array.isArray(nuxtConfig) ? nuxtConfig : [nuxtConfig]
 
-export default withNuxt(
-  // Your custom configs here
-)
+export default [
+  ...baseConfig,
+  {
+    files: ['**/*.{js,ts,vue}'],
+    rules: {
+      // custom rules here
+    }
+  }
+]

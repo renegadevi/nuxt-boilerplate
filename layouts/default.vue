@@ -1,121 +1,90 @@
 <script setup lang="ts">
+const { t } = useI18n();
 useLocaleHead({
-  addDirAttribute: true,
-  identifierAttribute: "id",
-  addSeoAttributes: true,
+  dir: true,
+  key: "id",
+  seo: true,
+  lang: true,
 });
 </script>
 <template>
-  <div
-    class="min-h-screen bg-slate-100 text-slate-900 dark:bg-slate-900 dark:text-white"
-  >
-    <!--
+  <!--
 
-    Template below is intended to be removed..
+    Template below is intended to be removed for your own project.
+    This is just a demo.
 
-  -->
-    <div class="container mx-auto max-w-screen-lg px-8">
-      <header class="mb-5">
-        <nav class="flex flex-row justify-between pb-5 pt-10">
-          <NuxtLink to="/" aria-label="Home" class="min-w-fit">
-            <nuxt-img
-              class="h-6 dark:hidden sm:ml-3 lg:ml-0"
-              src="nuxt/full-logo-green-dark.svg"
-              densities="x1 x2"
-              alt="nuxt-logo"
-              style="height: 24px; width: 99px"
-            />
-            <nuxt-img
-              class="hidden h-6 dark:block"
-              src="nuxt/full-logo-green-light.svg"
-              densities="x1 x2"
-              alt="nuxt-logo"
-              style="height: 24px; width: 99px"
-            />
-          </NuxtLink>
-          <div
-            class="flex flex-col space-x-3 space-y-4 sm:flex-row sm:space-y-0 rtl:space-x-reverse"
-          >
-            <ThemeSwitcher
-              class="inline-flex rounded-lg border border-gray-200 bg-gray-50 p-2.5 text-sm text-gray-900 dark:border-gray-700 dark:bg-slate-800 dark:text-white"
-            />
-
-            <LanguageSelector
-              class="inline-flex rounded-lg border border-gray-200 bg-gray-50 p-2.5 text-sm text-gray-900 dark:border-gray-700 dark:bg-slate-800 dark:text-white"
-            />
-          </div>
-        </nav>
-        <nav
-          class="prose dark:prose-invert flex justify-between font-light text-slate-500 dark:text-slate-100"
-        >
-          <ul
-            class="flex items-center justify-center space-x-2 rtl:space-x-reverse"
-          >
-            <li class="h-full">
-              <NuxtLink
-                class="flex h-full w-full items-center justify-center rounded-lg border border-slate-200 bg-gray-50 px-4 text-gray-700 hover:cursor-pointer hover:border-slate-200 hover:bg-slate-200 dark:border-gray-700 dark:bg-slate-800 dark:text-white dark:hover:bg-slate-700"
-                to="/"
-                >{{ $t("pages.index.link") }}</NuxtLink
-              >
-            </li>
-            <li class="h-full">
-              <NuxtLink
-                class="flex h-full w-full items-center justify-center rounded-lg border border-slate-200 bg-gray-50 px-4 text-gray-700 hover:cursor-pointer hover:border-slate-200 hover:bg-slate-200 dark:border-gray-700 dark:bg-slate-800 dark:text-white dark:hover:bg-slate-700"
-                to="/about"
-                >{{ $t("pages.about.link") }}</NuxtLink
-              >
-            </li>
-            <li class="h-full">
-              <NuxtLink
-                class="flex h-full w-full items-center justify-center rounded-lg border border-slate-200 bg-gray-50 px-4 text-gray-700 hover:cursor-pointer hover:border-slate-200 hover:bg-slate-200 dark:border-gray-700 dark:bg-slate-800 dark:text-white dark:hover:bg-slate-700"
-                to="/minimal"
-                >{{ $t("pages.minimal.link") }}</NuxtLink
-              >
-            </li>
-            <li class="h-full">
-              <NuxtLink
-                class="flex h-full w-full items-center justify-center rounded-lg border border-slate-200 bg-gray-50 px-4 text-gray-700 hover:cursor-pointer hover:border-slate-200 hover:bg-slate-200 dark:border-gray-700 dark:bg-slate-800 dark:text-white dark:hover:bg-slate-700"
-                to="/404"
-                >404</NuxtLink
-              >
-            </li>
-          </ul>
-          <ul>
-            <li class="space-between">
-              <NuxtLink
-                class="flex rounded-lg border border-transparent px-4 py-1.5 hover:cursor-pointer hover:opacity-70 dark:hover:opacity-90"
-                target="_blank"
-                to="https://github.com/renegadevi/nuxt-boilerplate"
-                aria-label="Github"
-                ><span class="dark:hidden"
-                  ><Icon name="mdi:github" size="auto" color="black" />
-                </span>
-                <span class="hidden dark:block">
-                  <Icon
-                    name="mdi:github"
-                    size="auto"
-                    color="white"
-                    class="hidden dark:block"
-                  />
-                </span>
-              </NuxtLink>
-            </li>
-          </ul>
-        </nav>
-      </header>
-      <div class="rounded-2xl bg-white px-6 py-8 shadow-xl dark:bg-slate-800">
-        <slot />
-      </div>
-      <footer
-        class="dark:text-300 py-20 text-center text-sm text-gray-600 dark:bg-slate-900"
+   -->
+  <div class="absolute top-5" :class="t('locale.dir') === 'rtl' ? 'left-5' : 'right-5'">
+    <div
+      class="flex w-full items-center justify-center gap-2"
+      :class="t('locale.dir') === 'rtl' ? 'flex-row-reverse' : 'flex-row'"
+    >
+      <NuxtLink
+        class="flex h-10 w-10 items-center justify-center rounded-lg  hover:bg-gray-100 text-gray-600 dark:hover:bg-slate-700 dark:text-white"
+        target="_blank"
+        aria-label="Github"
+        to="https://github.com/renegadevi/nuxt-boilerplate"
       >
-        <p>© {{ new Date().getFullYear() }} - {{ $t("site.name") }}</p>
-      </footer>
+        <Icon name="simple-icons:github" size="20" color="black" />
+      </NuxtLink>
+      <ThemeSwitcher class="rounded-lg  hover:bg-gray-100 p-2 dark:hover:bg-slate-700 text-gray-600 dark:text-white" />
+      <LanguageSelector  />
     </div>
   </div>
+  <header class="mx-auto w-full max-w-4xl pt-10">
+    <div class="flex flex-col items-center gap-4">
+      <Icon name="logos:nuxt-icon" size="42" />
+      <div>
+        <div class="flex flex-col gap-2 text-center">
+          <div class="items-center text-lg font-bold text-gray-500 dark:text-gray-300">
+            {{ $t("pages.index.hero.subtitle") }}
+          </div>
+          <div class="text-3xl font-bold dark:text-white">{{ $t("pages.index.hero.title") }}</div>
+          <div class="text-gray-600 dark:text-gray-400">{{ $t("pages.index.hero.description") }}</div>
+        </div>
+      </div>
+    </div>
+
+    <nav class="p-3 py-8">
+      <ul class="flex justify-center gap-4">
+        <li>
+          <NuxtLink
+            class="rounded-md bg-gray-200 dark:bg-slate-700 p-3 px-8 hover:bg-green-300  hover:dark:bg-slate-600 text-gray-700 dark:text-white hover:dark:text-white"
+            to="/"
+            >{{ t("pages.index.link") }}</NuxtLink
+          >
+        </li>
+        <li>
+          <NuxtLink
+            class="rounded-md bg-gray-200 dark:bg-slate-700 p-3 px-8 hover:bg-green-300 hover:dark:bg-slate-600 text-gray-700 dark:text-white hover:dark:text-white"
+            to="/another-page"
+            >{{ t("pages.another-page.link") }}</NuxtLink
+          >
+        </li>
+        <li>
+          <NuxtLink
+            class="rounded-md bg-gray-200 dark:bg-slate-700 p-3 px-8 hover:bg-green-300 hover:dark:bg-slate-600 text-gray-700 dark:text-white hover:dark:text-white"
+            to="/minimal"
+          >
+            {{ t("pages.minimal.link") }}
+          </NuxtLink>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main
+    class="flex min-h-64 w-full justify-center border-t-4 border-t-[#56CB82] bg-gradient-to-b from-[#D9F1DF] to-transparent dark:from-[#0D3335]"
+  >
+    <div class="container max-w-4xl">
+      <slot />
+    </div>
+  </main>
+  <footer class="dark:text-300 py-20 text-center text-sm text-gray-500 dark:text-gray-400">
+    <p>© {{ new Date().getFullYear() }} - {{ $t("site.name") }}</p>
+  </footer>
 </template>
 <style lang="postcss">
 ul .router-link-exact-active {
-  @apply border-slate-400 bg-slate-500 text-white hover:border-slate-500 hover:bg-slate-500 dark:border-slate-600 dark:bg-slate-700;
+  @apply bg-green-400 text-black dark:bg-gray-200 dark:text-black;
 }
 </style>

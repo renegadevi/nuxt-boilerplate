@@ -4,7 +4,7 @@
   "locale.ar-AR": "Arabic",
   "locale.dir": "ltr",
   "site": {
-    "name": "Nuxt Boilerplate"
+    "name": "Unofficial Nuxt Boilerplate"
   },
   "themes": {
     "system": "System",
@@ -13,7 +13,7 @@
   },
   "cookies": {
     "bar": {
-      "title": "🍪 Hi. This site uses cookies",
+      "title": "🍪 Hi there, this site uses cookies.",
       "description": "We use cookies and similar technologies to help personalize content and offer a better experience. You can opt to customize them by clicking the customize button."
     },
     "modal": {
@@ -40,7 +40,10 @@
       "hero": {
         "title": "Nuxt Boilerplate",
         "subtitle": "Unofficial",
-        "description": "A ready to use starter kit for all kinds of projects"
+        "description": "A ready to use starter kit for all kinds of projects",
+        "tagline-start": "Packed with",
+        "tagline-highlight": "features",
+        "tagline-end": "to use"
       },
       "features": {
         "googleFonts": "Google Fonts",
@@ -56,16 +59,17 @@
         "deviceDetect": "Device detection",
         "cookies": "Cookie banner",
         "Iconify": "Iconify",
-        "Pinia": "Pinia"
+        "Pinia": "Pinia",
+        "enterprise": "Enterprise ready"
       }
     },
-    "about": {
+    "another-page": {
       "meta": {
-        "title": "About",
-        "description": "About page"
+        "title": "Another page",
+        "description": "Another page"
       },
-      "link": "About",
-      "title": "About",
+      "link": "Another",
+      "title": "Another page",
       "p": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque iste atque, hic porro officiis fugit quae deserunt nobis dolorum odit dignissimos consequatur esse maiores repellat impedit. Quae dolorum id rem?"
     },
     "minimal": {
@@ -74,7 +78,7 @@
         "description": "Minimal page using Fullscreen-layout"
       },
       "link": "Minimal",
-      "title": "Minimal with Fullscreen-layout",
+      "title": "Minimal page with Fullscreen-layout",
       "p": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque iste atque, hic porro officiis fugit quae deserunt nobis dolorum odit dignissimos consequatur esse maiores repellat impedit. Quae dolorum id rem?"
     }
   }

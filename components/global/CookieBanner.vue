@@ -1,5 +1,8 @@
 <script setup lang="ts">
 const { locale } = useI18n();
+type LocaleCode = typeof locale.value extends `${infer Code}-${string}` ? Code : never;
+const currentLocale = computed(() => locale.value.slice(0, 2) as LocaleCode)
+
 /* Example to watch for a cookie being accepted */
 /*
 const {
@@ -26,7 +29,7 @@ watch(
 </script>
 <template>
   <div>
-    <CookieControl :locale="locale.slice(0, 2)">
+    <CookieControl :locale="currentLocale">
       <template #bar>
         <h3>{{ $t("cookies.bar.title") }}</h3>
         <p>{{ $t("cookies.bar.description") }}</p>
