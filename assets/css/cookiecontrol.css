@@ -144,19 +144,19 @@
   transform: translate3d(0, -50%, 0);
 }
 .cookieControl__ModalContentInner h3 {
-  @apply mt-3 text-sm;
+  @apply mt-3 text-sm dark:text-white;
 }
 .cookieControl__ModalContentInner h3:first-child {
   @apply block text-2xl font-medium;
 }
 .cookieControl__ModalContentInner p {
-  @apply mb-5 mt-6 border-b pb-5 text-sm;
+  @apply mb-5 mt-6 border-b pb-5 text-sm ;
 }
 .cookieControl__ModalContentInner p a {
   @apply border-b font-bold;
 }
 .cookieControl__ModalContentInner {
-  @apply max-h-[90vh] overflow-y-scroll md:max-h-[80vh];
+  @apply max-h-[90vh] overflow-y-scroll md:max-h-[80vh] dark:text-white;
 }
 .cookieControl__ModalContentInner ul li {
   @apply relative my-3 rounded-md p-5;

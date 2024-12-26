@@ -13,18 +13,16 @@ definePageMeta({
 });
 </script>
 <template>
+  <!--
+
+    Page is intended to be removed for your own project.
+
+   -->
   <div class="p-3">
-    <h1 class="text-4xl">{{ $t("pages.minimal.title") }}</h1>
+    <h1 class="text-4xl dark:text-white">{{ $t("pages.minimal.title") }}</h1>
     <main class="mt-4 text-slate-500 dark:text-slate-400 [&>*]:mb-4">
-      <p>
-        {{ $t("pages.minimal.p") }}
-      </p>
-      <p>
-        {{ $t("pages.minimal.p") }}
-      </p>
-      <p>{{ $t("pages.minimal.p") }} {{ $t("pages.minimal.p") }}</p>
-      <p>
-        {{ $t("pages.minimal.p") }}
+      <p v-for="index in 3" :key="index">
+        {{ $t("pages.minimal.p") }}, {{ $t("pages.minimal.p") }}
       </p>
     </main>
   </div>

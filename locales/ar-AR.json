@@ -40,7 +40,10 @@
       "hero": {
         "title": "قالب Nuxt",
         "subtitle": "غير رسمي",
-        "description": "مجموعة جاهزة للاستخدام لجميع أنواع المشاريع"
+        "description": "مجموعة جاهزة للاستخدام لجميع أنواع المشاريع",
+        "tagline-start": "مليئة بـ",
+        "tagline-highlight": "سمات",
+        "tagline-end": "للإستخدام"
       },
       "features": {
         "googleFonts": "خطوط جوجل",
@@ -56,7 +59,8 @@
         "deviceDetect": "اكتشاف الأجهزة",
         "cookies": "شريط ملفات تعريف الارتباط",
         "Iconify": "Iconify",
-        "Pinia": "Pinia"
+        "Pinia": "Pinia",
+        "enterprise": "جاهز للمشاريع"
       }
     },
     "about": {
