@@ -5,6 +5,7 @@ import fr from "./locales/fr-FR.json";
 import ar from "./locales/ar-AR.json";
 
 export default defineNuxtConfig({
+  ssr: false,
   devtools: { enabled: true },
 
   runtimeConfig: {
@@ -78,21 +79,13 @@ export default defineNuxtConfig({
 
   i18n: {
     baseUrl: process.env.VITE_BASE_URL,
-    vueI18n: "./i18n.config.ts",
+    vueI18n: "i18n.config.ts",
     detectBrowserLanguage: {
       useCookie: false,
       alwaysRedirect: true,
       fallbackLocale: "en-US",
       redirectOn: "root", // recommended
     },
-  },
-
-  eslint: {
-    lintOnStart: false,
-  },
-
-  pinia: {
-    autoImports: ['defineStore', 'acceptHMRUpdate'],
   },
 
   cookieControl: {

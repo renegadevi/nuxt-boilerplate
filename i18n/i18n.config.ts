@@ -1,6 +1,6 @@
-import en from "./locales/en-US.json";
-import fr from "./locales/fr-FR.json";
-import ar from "./locales/ar-AR.json";
+import en from "../locales/en-US.json";
+import fr from "../locales/fr-FR.json";
+import ar from "../locales/ar-AR.json";
 
 export default defineI18nConfig(() => {
   const config = useRuntimeConfig()
