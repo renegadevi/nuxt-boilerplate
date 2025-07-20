@@ -1,8 +1,10 @@
 {
-  "locale.en-US": "English",
-  "locale.fr-FR": "Français",
-  "locale.ar-AR": "Arabic",
-  "locale.dir": "ltr",
+  "locale": {
+    "dir": "ltr",
+    "en-US": "English",
+    "fr-FR": "Français",
+    "ar-AR": "العربية"
+  },
   "site": {
     "name": "Nuxt Boilerplate"
   },
@@ -40,10 +42,7 @@
       "hero": {
         "title": "Nuxt Boilerplate",
         "subtitle": "Non officiel",
-        "description": "Un kit de démarrage prêt à l'emploi pour toutes sortes de projets",
-        "tagline-start": "Rempli de",
-        "tagline-highlight": "fonctionnalités",
-        "tagline-end": "à utiliser"
+        "description": "Un kit de démarrage prêt à l'emploi pour toutes sortes de projets"
       },
       "features": {
         "googleFonts": "Polices Google",
@@ -62,15 +61,6 @@
         "Pinia": "Pinia",
         "enterprise": "Prêt pour l'entreprise"
       }
-    },
-    "another-page": {
-      "meta": {
-        "title": "Une autre page",
-        "description": "Une autre page"
-      },
-      "link": "Une autre page",
-      "title": "Une autre page",
-      "p": "Dans un jardin luxuriant, tout est calme et sérénité. Des fleurs aux couleurs vives se mêlent aux feuillages sombres des grands arbres. Le parfum sucré des roses embaume l'air tandis que le vent fait danser les feuilles. On entend le chant mélodieux des oiseaux, comme une symphonie naturelle qui ne cesse jamais. Dans ce havre de paix, on se sent loin du monde, enveloppé par la beauté et la quiétude de la nature."
     },
     "minimal": {
       "meta": {

@@ -12,11 +12,6 @@ export default {
       body: ["Inter"],
     },
     extend: {
-      colors: {
-        "nuxt-green": "#00DC82",
-        "nuxt-white": "#ffffff",
-        "nuxt-grey": "#18181B",
-      },
       spacing: {
         "8xl": "96rem",
         "9xl": "128rem",
@@ -29,20 +24,13 @@ export default {
     },
   },
   content: [
-    `./components/**/*.{vue,js,ts}`,
-    `./layouts/**/*.vue`,
-    `./pages/**/*.vue`,
-    `./composables/**/*.{js,ts}`,
-    `./plugins/**/*.{js,ts}`,
-    `./utils/**/*.{js,ts}`,
-    `./app.{js,ts,vue}`,
-    `./error.{js,ts,vue}`,
-    `./app.config.{js,ts}`,
+    `./app/components/**/*.{vue,js,ts}`,
+    `./app/layouts/**/*.vue`,
+    `./app/pages/**/*.vue`,
+    `./app/composables/**/*.{js,ts}`,
+    `./app/plugins/**/*.{js,ts}`,
+    `./app/utils/**/*.{js,ts}`,
+    `./app/app.{js,ts,vue}`,
+    `./app/error.{js,ts,vue}`,
   ],
-  // safelist: [
-  //   'safelisted',
-  //   {
-  //     pattern: /bg-(red|green|blue)-(100|200|300)/,
-  //   },
-  // ]
 } satisfies Config;

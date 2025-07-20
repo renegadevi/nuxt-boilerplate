@@ -150,7 +150,7 @@
   @apply block text-2xl font-medium;
 }
 .cookieControl__ModalContentInner p {
-  @apply mb-5 mt-6 border-b pb-5 text-sm ;
+  @apply mb-5 mt-6 border-b pb-5 text-sm;
 }
 .cookieControl__ModalContentInner p a {
   @apply border-b font-bold;
