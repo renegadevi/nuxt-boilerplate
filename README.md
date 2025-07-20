@@ -1,13 +1,13 @@
 # Nuxt Boilerplate
 
-A ready to use Nuxt 3 boilerplate
+A ready to use Nuxt 4 boilerplate
 
 **Live Demo**: https://nuxt-boilerplate-main.vercel.app/
 
 **StackBlitz**: https://stackblitz.com/github/renegadevi/nuxt-boilerplate
 
 ![screenshot](https://raw.githubusercontent.com/renegadevi/nuxt-boilerplate/main/.github/screenshot.png)
-![lighthouse](https://github.com/renegadevi/nuxt-boilerplate/blob/e806bae6efec29a19579d7cf76ef683ffe980917/.github/lighthouse.png)
+![lighthouse](https://raw.githubusercontent.com/renegadevi/nuxt-boilerplate/main/.github/lighthouse.png)
 
 ## Quick setup (TLDR;)
 
@@ -73,17 +73,3 @@ pnpm run build;pnpm run preview-https
 ```
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
-
-## Nuxt Modules included:
-
-- [eslint](https://nuxt.com/modules/eslint)
-- [pinia](https://nuxt.com/modules/pinia)
-- [tailwindcss](https://nuxt.com/modules/tailwindcss)
-- [i18n](https://nuxt.com/modules/i18n)
-- [device](https://nuxt.com/modules/device)
-- [devtools](https://nuxt.com/modules/devtools)
-- [image](https://nuxt.com/modules/image)
-- [google-fonts](https://nuxt.com/modules/google-fonts)
-- [color-mode](https://nuxt.com/modules/color-mode)
-- [icon](https://nuxt.com/modules/icon)
-- [cookie-control](https://nuxt.com/modules/cookie-control)

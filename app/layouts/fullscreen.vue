@@ -1,11 +1,4 @@
-<script setup lang="ts">
-useLocaleHead({
-  dir: true,
-  key: "id",
-  seo: true,
-  lang: true,
-});
-</script>
+<script setup lang="ts"></script>
 <template>
   <!--
 
@@ -18,8 +11,7 @@ useLocaleHead({
       class="flex h-10 w-10 items-center justify-center rounded-full text-gray-600 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-slate-800"
       to="/"
     >
-      <Icon name="ph:arrow-left" size="20"
-      />
+      <Icon name="ph:arrow-left" size="20" />
     </NuxtLink>
     <div class="container max-w-4xl pt-14">
       <slot />

@@ -1,7 +1,7 @@
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
 @import "cookiecontrol.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 @layer base {
   select {

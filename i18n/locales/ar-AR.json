@@ -1,8 +1,10 @@
 {
-  "locale.en-US": "English",
-  "locale.fr-FR": "French",
-  "locale.ar-AR": "العربية",
-  "locale.dir": "rtl",
+  "locale": {
+    "dir": "rtl",
+    "en-US": "English",
+    "fr-FR": "Français",
+    "ar-AR": "العربية"
+  },
   "site": {
     "name": "قالب Nuxt"
   },

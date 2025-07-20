@@ -1,7 +1,9 @@
 <script setup lang="ts">
 const { locale } = useI18n();
-type LocaleCode = typeof locale.value extends `${infer Code}-${string}` ? Code : never;
-const currentLocale = computed(() => locale.value.slice(0, 2) as LocaleCode)
+type LocaleCode = typeof locale.value extends `${infer Code}-${string}`
+  ? Code
+  : never;
+const currentLocale = computed(() => locale.value.slice(0, 2) as LocaleCode);
 
 /* Example to watch for a cookie being accepted */
 /*

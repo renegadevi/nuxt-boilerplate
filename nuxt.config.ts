@@ -1,24 +1,13 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
-import { defineNuxtConfig } from "nuxt/config";
-import en from "./locales/en-US.json";
-import fr from "./locales/fr-FR.json";
-import ar from "./locales/ar-AR.json";
-
 export default defineNuxtConfig({
-  ssr: false,
+  //ssr:false,
+  compatibilityDate: "2025-07-15",
   devtools: { enabled: true },
-
   runtimeConfig: {
     public: {
-      baseUrl: process.env.VITE_BASE_URL //  || 'http://localhost:3000'
-    }
+      baseUrl: process.env.NUXT_PUBLIC_BASE_URL || "http://localhost:3000",
+    },
   },
-
-  nitro: {
-    compressPublicAssets: true,
-    logLevel: 4,
-  },
-
   modules: [
     "@nuxt/eslint",
     "@pinia/nuxt",
@@ -31,7 +20,10 @@ export default defineNuxtConfig({
     "@nuxtjs/i18n",
     "@dargmuesli/nuxt-cookie-control",
   ],
-
+  nitro: {
+    compressPublicAssets: true,
+    logLevel: 4,
+  },
   tailwindcss: {
     cssPath: "~/assets/css/tailwind.css",
     configPath: "tailwind.config.ts",
@@ -48,7 +40,7 @@ export default defineNuxtConfig({
   },
 
   imports: {
-    dirs: ["./stores", "./locales"],
+    dirs: ["app/stores"],
   },
 
   app: {
@@ -60,12 +52,17 @@ export default defineNuxtConfig({
 
   colorMode: {
     classSuffix: "",
+    preference: "system",
+    fallback: "light",
+    storageKey: "color-mode",
+    storage: "localStorage",
+    disableTransition: false,
   },
 
   image: {
-    provider: "ipx", // change to e.g 'vercel' if hosted on vercel
+    provider: "ipx",
     quality: 80,
-    format: ["png", "jpeg", "webp"],
+    format: ["webp", "png", "jpeg"],
   },
 
   googleFonts: {
@@ -78,13 +75,19 @@ export default defineNuxtConfig({
   },
 
   i18n: {
-    baseUrl: process.env.VITE_BASE_URL,
-    vueI18n: "i18n.config.ts",
+    baseUrl: process.env.NUXT_PUBLIC_BASE_URL || "http://localhost:3000",
+    defaultLocale: "en-US",
+    langDir: "./locales",
+    strategy: "no_prefix",
+    locales: [
+      { code: "en-US", iso: "en-US", file: "en-US.json" },
+      { code: "fr-FR", iso: "fr-FR", file: "fr-FR.json" },
+      { code: "ar-AR", iso: "ar-AR", file: "ar-AR.json" },
+    ],
     detectBrowserLanguage: {
-      useCookie: false,
-      alwaysRedirect: true,
-      fallbackLocale: "en-US",
-      redirectOn: "root", // recommended
+      useCookie: true,
+      cookieKey: "nuxt-lang",
+      redirectOn: "root",
     },
   },
 
@@ -101,24 +104,24 @@ export default defineNuxtConfig({
     isCssEnabled: false,
     isDashInDescriptionEnabled: false,
     cookies: {
-      necessary: [{
-        name: {
-          fr: fr.cookies.necessary.title,
-          en: en.cookies.necessary.title,
-          ar: ar.cookies.necessary.title,
+      necessary: [
+        {
+          name: {
+            fr: "Nécessaire",
+            en: "Necessary",
+            ar: "ضروري",
+          },
+          description: {
+            fr: "Nécessaire",
+            en: "Necessary",
+            ar: "ضروري",
+          },
+          isPreselected: true,
+          id: "necessary",
         },
-        description: {
-          fr: fr.cookies.necessary.description,
-          en: en.cookies.necessary.description,
-          ar: ar.cookies.necessary.description,
-        },
-        isPreselected: true,
-        id: "necessary"
-      }],
+      ],
       optional: [],
     },
     locales: ["en", "fr", "ar"],
   },
-
-  compatibilityDate: "2024-12-26",
 });
