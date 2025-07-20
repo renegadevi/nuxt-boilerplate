@@ -8,6 +8,9 @@ useSeoMeta({
   title: t("pages.index.meta.title"),
   description: t("pages.index.meta.description"),
 });
+definePageMeta({
+  layout: "default",
+});
 </script>
 <template>
   <!--
@@ -63,7 +66,7 @@ useSeoMeta({
         </li>
         <li class="group">
           <div
-            class="flex items-center p-1.5 border rounded bg-green-50 dark:bg-green-900 text-green-600 dark:text-green-400 border-green-300 dark:border-green-700""
+            class="flex items-center p-1.5 border rounded bg-green-50 dark:bg-green-900 text-green-600 dark:text-green-400 border-green-300 dark:border-green-700"
           >
             <Icon name="ph:sun-horizon" />
           </div>

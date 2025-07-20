@@ -42,10 +42,7 @@
       "hero": {
         "title": "Nuxt Boilerplate",
         "subtitle": "Unofficial",
-        "description": "A ready to use starter kit for all kinds of projects",
-        "tagline-start": "Packed with",
-        "tagline-highlight": "features",
-        "tagline-end": "to use"
+        "description": "A ready to use starter kit for all kinds of projects"
       },
       "features": {
         "googleFonts": "Google Fonts",
@@ -64,15 +61,6 @@
         "Pinia": "Pinia",
         "enterprise": "Enterprise ready"
       }
-    },
-    "another-page": {
-      "meta": {
-        "title": "Another page",
-        "description": "Another page"
-      },
-      "link": "Another",
-      "title": "Another page",
-      "p": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque iste atque, hic porro officiis fugit quae deserunt nobis dolorum odit dignissimos consequatur esse maiores repellat impedit. Quae dolorum id rem?"
     },
     "minimal": {
       "meta": {
