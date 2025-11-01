@@ -21,8 +21,8 @@ onMounted(() => {
     <button
       v-bind="$attrs"
       class="cursor-pointer flex w-10 h-10"
-      @click="toggleColorMode"
       aria-label="Toggle color modes"
+      @click="toggleColorMode"
     >
       <Icon :name size="24" />
     </button>

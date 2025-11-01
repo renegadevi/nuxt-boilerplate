@@ -23,9 +23,8 @@ function switchLanguage(lang: string) {
 </script>
 
 <template>
-  <div class="w-auto" ref="dropdownRef">
+  <div ref="dropdownRef" class="w-auto">
     <button
-      @click="isOpen = !isOpen"
       class="flex items-center gap-2 rounded-lg p-2 px-4 text-gray-600 dark:text-white"
       :class="[
         { 'flex-row-reverse': t('locale.dir') === 'rtl' },
@@ -33,6 +32,7 @@ function switchLanguage(lang: string) {
           ? 'bg-gray-100 dark:bg-slate-700'
           : 'hover:bg-gray-100 dark:hover:bg-slate-700',
       ]"
+      @click="isOpen = !isOpen"
     >
       <Icon name="ph:translate" size="1.25em" />
       <span>{{ t("locale." + locale) }}</span>

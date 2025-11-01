@@ -34,7 +34,7 @@ useHead({
     <div
       v-if="isLoading"
       class="fixed inset-0 z-50 flex items-center justify-center bg-white transition-opacity duration-300 dark:bg-gray-900"
-    ></div>
+    />
     <NuxtLayout>
       <div>
         <CookieBanner />

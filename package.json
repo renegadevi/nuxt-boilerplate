@@ -17,7 +17,8 @@
     "prettier:check": "prettier --check .",
     "prettier:fix": "prettier --write .",
     "commit": "git-cz",
-    "prepare": "husky"
+    "prepare": "husky",
+    "test": "echo \"No tests specified\" && exit 0"
   },
   "devDependencies": {
     "@commitlint/cli": "^20.1.0",
