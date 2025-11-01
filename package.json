@@ -20,6 +20,8 @@
     "prepare": "husky"
   },
   "devDependencies": {
+    "@commitlint/cli": "^20.1.0",
+    "@commitlint/config-conventional": "^20.0.0",
     "@dargmuesli/nuxt-cookie-control": "^9.1.5",
     "@nuxt/eslint": "^1.6.0",
     "@nuxt/icon": "^2.0.0",
