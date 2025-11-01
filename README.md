@@ -52,6 +52,17 @@ cd certs
 mkcert localhost
 ```
 
+## Start conventional commit
+
+### required for use cz-git
+
+```bash
+# HTTP
+npm install -g commitizen
+
+```
+
+
 ## Start local server
 
 ### Start development server
