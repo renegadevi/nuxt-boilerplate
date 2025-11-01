@@ -1,1 +1,2 @@
 npx run test
+npx run test:full

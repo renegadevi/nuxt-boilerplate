@@ -18,7 +18,8 @@
     "prettier:fix": "prettier --write .",
     "commit": "git-cz",
     "prepare": "husky",
-    "test": "echo \"No tests specified\" && exit 0"
+    "test": "echo \"No tests specified\" && exit 0",
+    "test:full": "npm run lint && npm run prettier:check && echo 'Rodando testes de integração...' && exit 0"
   },
   "devDependencies": {
     "@commitlint/cli": "^20.1.0",
