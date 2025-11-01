@@ -13,9 +13,11 @@
     "start": "node .output/server/index.mjs",
     "postinstall": "nuxt prepare",
     "lint": "eslint --ext .ts,.js,.vue .",
+    "lint:fix": "eslint --ext .ts,.js,.vue . --fix",
     "prettier:check": "prettier --check .",
-    "prettier:fix": "prettier --write . --fix",
-    "commit": "git-cz"
+    "prettier:fix": "prettier --write .",
+    "commit": "git-cz",
+    "prepare": "husky"
   },
   "devDependencies": {
     "@dargmuesli/nuxt-cookie-control": "^9.1.5",
@@ -29,6 +31,7 @@
     "@nuxtjs/tailwindcss": "^6.14.0",
     "@pinia/nuxt": "^0.11.2",
     "cz-git": "^1.12.0",
+    "husky": "^9.1.7",
     "nuxt": "^4.1.3",
     "postcss-import": "^16.1.1",
     "prettier": "^3.6.2",
@@ -41,5 +44,14 @@
       "path": "node_modules/cz-git",
       "useEmoji": true
     }
+  },
+  "lint-staged": {
+    "*.{ts,js,vue}": [
+      "npm run lint:fix",
+      "npm run prettier:fix"
+    ],
+    "*.{json,md,css,scss,html}": [
+      "npm run prettier:fix"
+    ]
   }
 }

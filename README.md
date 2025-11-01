@@ -62,7 +62,6 @@ npm install -g commitizen
 
 ```
 
-
 ## Start local server
 
 ### Start development server
