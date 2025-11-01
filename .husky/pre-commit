@@ -1,5 +1,1 @@
-#!/usr/bin/env sh
-. "$(dirname -- "$0")/_/husky.sh"
-
-# Este é o comando chave que precisa estar aqui
 npx lint-staged
