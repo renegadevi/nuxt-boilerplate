@@ -12,9 +12,13 @@
     padding-left: 5px;
   }
 }
+
 html {
   @apply bg-white;
+  background-image: radial-gradient(rgba(0, 0, 0, 0.08) 1px, transparent 1px);
+  background-size: 20px 20px;
 }
 html.dark {
-  @apply bg-slate-900;
+  @apply bg-neutral-950;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px);
 }

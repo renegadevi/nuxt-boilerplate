@@ -13,20 +13,20 @@ definePageMeta({
 });
 </script>
 <template>
-  <!--
-
-    Page below is intended to be removed for your own project.
-    This is just a demo.
-
-   -->
   <div class="justify-center">
+    <!--
+
+      Page below is intended to be removed for your own project.
+      This is just a demo.
+
+     -->
     <section class="flex flex-col items-center mt-10">
       <ul
         class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 [&>li]:text-gray-600 [&>li]:dark:text-gray-200 [&>li]:flex [&>li]:items-center [&>li]:p-2.5 [&>li]:rounded-lg"
       >
         <li class="group">
           <div
-            class="flex items-center p-1.5 border rounded bg-green-50 dark:bg-green-900 text-green-600 dark:text-green-400 border-green-300 dark:border-green-700"
+            class="flex items-center p-2.5 border-2 rounded-lg bg-green-100 dark:bg-green-900 text-xl text-green-600 dark:text-green-400 border-green-200 dark:border-green-800"
           >
             <Icon name="ph:text-aa" />
           </div>
@@ -34,7 +34,7 @@ definePageMeta({
         </li>
         <li class="group">
           <div
-            class="flex items-center p-1.5 border rounded bg-green-50 dark:bg-green-900 text-green-600 dark:text-green-400 border-green-300 dark:border-green-700"
+            class="flex items-center p-2.5 border-2 rounded-lg bg-green-100 dark:bg-green-900 text-xl text-green-600 dark:text-green-400 border-green-200 dark:border-green-800"
           >
             <Icon name="simple-icons:tailwindcss" />
           </div>
@@ -42,7 +42,7 @@ definePageMeta({
         </li>
         <li class="group">
           <div
-            class="flex items-center p-1.5 border rounded bg-green-50 dark:bg-green-900 text-green-600 dark:text-green-400 border-green-300 dark:border-green-700"
+            class="flex items-center p-2.5 border-2 rounded-lg bg-green-100 dark:bg-green-900 text-xl text-green-600 dark:text-green-400 border-green-200 dark:border-green-800"
           >
             <Icon name="simple-icons:prettier" />
           </div>
@@ -50,7 +50,7 @@ definePageMeta({
         </li>
         <li class="group">
           <div
-            class="flex items-center p-1.5 border rounded bg-green-50 dark:bg-green-900 text-green-600 dark:text-green-400 border-green-300 dark:border-green-700"
+            class="flex items-center p-2.5 border-2 rounded-lg bg-green-100 dark:bg-green-900 text-xl text-green-600 dark:text-green-400 border-green-200 dark:border-green-800"
           >
             <Icon name="ph:cookie" />
           </div>
@@ -58,7 +58,7 @@ definePageMeta({
         </li>
         <li class="group">
           <div
-            class="flex items-center p-1.5 border rounded bg-green-50 dark:bg-green-900 text-green-600 dark:text-green-400 border-green-300 dark:border-green-700"
+            class="flex items-center p-2.5 border-2 rounded-lg bg-green-100 dark:bg-green-900 text-xl text-green-600 dark:text-green-400 border-green-200 dark:border-green-800"
           >
             <Icon name="streamline-logos:eslint-logo-solid" />
           </div>
@@ -66,7 +66,7 @@ definePageMeta({
         </li>
         <li class="group">
           <div
-            class="flex items-center p-1.5 border rounded bg-green-50 dark:bg-green-900 text-green-600 dark:text-green-400 border-green-300 dark:border-green-700"
+            class="flex items-center p-2.5 border-2 rounded-lg bg-green-100 dark:bg-green-900 text-xl text-green-600 dark:text-green-400 border-green-200 dark:border-green-800"
           >
             <Icon name="ph:sun-horizon" />
           </div>
@@ -74,7 +74,7 @@ definePageMeta({
         </li>
         <li class="group">
           <div
-            class="flex items-center p-1.5 border rounded bg-green-50 dark:bg-green-900 text-green-600 dark:text-green-400 border-green-300 dark:border-green-700"
+            class="flex items-center p-2.5 border-2 rounded-lg bg-green-100 dark:bg-green-900 text-xl text-green-600 dark:text-green-400 border-green-200 dark:border-green-800"
           >
             <Icon name="ph:translate" />
           </div>
@@ -82,7 +82,7 @@ definePageMeta({
         </li>
         <li class="group">
           <div
-            class="flex items-center p-1.5 border rounded bg-green-50 dark:bg-green-900 text-green-600 dark:text-green-400 border-green-300 dark:border-green-700"
+            class="flex items-center p-2.5 border-2 rounded-lg bg-green-100 dark:bg-green-900 text-xl text-green-600 dark:text-green-400 border-green-200 dark:border-green-800"
           >
             <Icon name="simple-icons:iconify" />
           </div>
@@ -90,7 +90,7 @@ definePageMeta({
         </li>
         <li class="group">
           <div
-            class="flex items-center p-1.5 border rounded bg-green-50 dark:bg-green-900 text-green-600 dark:text-green-400 border-green-300 dark:border-green-700"
+            class="flex items-center p-2.5 border-2 rounded-lg bg-green-100 dark:bg-green-900 text-xl text-green-600 dark:text-green-400 border-green-200 dark:border-green-800"
           >
             <Icon name="nonicons:typescript-16" />
           </div>
@@ -98,7 +98,7 @@ definePageMeta({
         </li>
         <li class="group">
           <div
-            class="flex items-center p-1.5 border rounded bg-green-50 dark:bg-green-900 text-green-600 dark:text-green-400 border-green-300 dark:border-green-700"
+            class="flex items-center p-2.5 border-2 rounded-lg bg-green-100 dark:bg-green-900 text-xl text-green-600 dark:text-green-400 border-green-200 dark:border-green-800"
           >
             <Icon name="simple-icons:postcss" />
           </div>
@@ -106,7 +106,7 @@ definePageMeta({
         </li>
         <li class="group">
           <div
-            class="flex items-center p-1.5 border rounded bg-green-50 dark:bg-green-900 text-green-600 dark:text-green-400 border-green-300 dark:border-green-700"
+            class="flex items-center p-2.5 border-2 rounded-lg bg-green-100 dark:bg-green-900 text-xl text-green-600 dark:text-green-400 border-green-200 dark:border-green-800"
           >
             <Icon name="ph:devices" />
           </div>
@@ -114,7 +114,7 @@ definePageMeta({
         </li>
         <li class="group">
           <div
-            class="flex items-center p-1.5 border rounded bg-green-50 dark:bg-green-900 text-green-600 dark:text-green-400 border-green-300 dark:border-green-700"
+            class="flex items-center p-2.5 border-2 rounded-lg bg-green-100 dark:bg-green-900 text-xl text-green-600 dark:text-green-400 border-green-200 dark:border-green-800"
           >
             <Icon name="mdi:fruit-pineapple" />
           </div>
@@ -122,7 +122,7 @@ definePageMeta({
         </li>
         <li class="group">
           <div
-            class="flex items-center p-1.5 border rounded bg-green-50 dark:bg-green-900 text-green-600 dark:text-green-400 border-green-300 dark:border-green-700"
+            class="flex items-center p-2.5 border-2 rounded-lg bg-green-100 dark:bg-green-900 text-xl text-green-600 dark:text-green-400 border-green-200 dark:border-green-800"
           >
             <Icon name="ph:images" />
           </div>
@@ -130,7 +130,7 @@ definePageMeta({
         </li>
         <li class="group">
           <div
-            class="flex items-center p-1.5 border rounded bg-green-50 dark:bg-green-900 text-green-600 dark:text-green-400 border-green-300 dark:border-green-700"
+            class="flex items-center p-2.5 border-2 rounded-lg bg-green-100 dark:bg-green-900 text-xl text-green-600 dark:text-green-400 border-green-200 dark:border-green-800"
           >
             <Icon name="ph:lighthouse" />
           </div>
@@ -138,7 +138,7 @@ definePageMeta({
         </li>
         <li class="group">
           <div
-            class="flex items-center p-1.5 border rounded bg-green-50 dark:bg-green-900 text-green-600 dark:text-green-400 border-green-300 dark:border-green-700"
+            class="flex items-center p-2.5 border-2 rounded-lg bg-green-100 dark:bg-green-900 text-xl text-green-600 dark:text-green-400 border-green-200 dark:border-green-800"
           >
             <Icon name="ph:building-office" />
           </div>

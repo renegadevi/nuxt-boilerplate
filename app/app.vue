@@ -5,7 +5,7 @@ const isLoading = ref(true);
 if (import.meta.client) {
   const storedLanguage = localStorage.getItem("nuxt-lang");
   if (storedLanguage && storedLanguage !== "en-US") {
-    locale.value = storedLanguage;
+    locale.value = storedLanguage as typeof locale.value;
   }
 }
 
@@ -34,7 +34,7 @@ useHead({
     <div
       v-if="isLoading"
       class="fixed inset-0 z-50 flex items-center justify-center bg-white transition-opacity duration-300 dark:bg-gray-900"
-    ></div>
+    />
     <NuxtLayout>
       <div>
         <CookieBanner />

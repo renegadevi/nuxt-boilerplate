@@ -13,26 +13,27 @@ onMounted(() => {
 });
 
 function switchLanguage(lang: string) {
+  const localeCode = lang as typeof locale.value;
   if (setLocale) {
-    setLocale(lang);
+    setLocale(localeCode);
   } else {
-    locale.value = lang;
+    locale.value = localeCode;
   }
   isOpen.value = false;
 }
 </script>
 
 <template>
-  <div class="w-auto" ref="dropdownRef">
+  <div ref="dropdownRef" class="w-auto">
     <button
-      @click="isOpen = !isOpen"
       class="flex items-center gap-2 rounded-lg p-2 px-4 text-gray-600 dark:text-white"
       :class="[
         { 'flex-row-reverse': t('locale.dir') === 'rtl' },
         isOpen
-          ? 'bg-gray-100 dark:bg-slate-700'
-          : 'hover:bg-gray-100 dark:hover:bg-slate-700',
+          ? 'bg-gray-100 dark:bg-neutral-700'
+          : 'hover:bg-gray-100 dark:hover:bg-neutral-700',
       ]"
+      @click="isOpen = !isOpen"
     >
       <Icon name="ph:translate" size="1.25em" />
       <span>{{ t("locale." + locale) }}</span>
@@ -45,15 +46,15 @@ function switchLanguage(lang: string) {
 
     <div
       v-if="isOpen"
-      class="absolute mt-1 min-w-32 rounded-lg bg-white shadow-lg border border-gray-100 dark:bg-slate-700 dark:border-slate-700 right-3"
+      class="absolute mt-1 min-w-32 rounded-lg bg-white shadow-lg border border-gray-100 dark:bg-neutral-700 dark:border-neutral-700 right-3"
     >
       <ul>
         <li
           v-for="lang in availableLocales"
           :key="lang"
           :class="[
-            'px-4 py-2 cursor-pointer rounded-md m-1 hover:bg-gray-100 text-gray-600 dark:text-white dark:hover:bg-slate-600',
-            { 'bg-gray-100 dark:bg-slate-600': locale === lang },
+            'px-4 py-2 cursor-pointer rounded-md m-1 hover:bg-gray-100 text-gray-600 dark:text-white dark:hover:bg-neutral-600',
+            { 'bg-gray-100 dark:bg-neutral-600': locale === lang },
             { 'text-right': t('locale.dir') === 'rtl' },
           ]"
           @click="switchLanguage(lang)"
